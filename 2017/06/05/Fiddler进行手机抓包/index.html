@@ -6,15 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018 | 涂海林的个人博客</title>
+  <title>Fiddler进行手机抓包 | 涂海林的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="涂海林的个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="通过Fiddler抓包工具，可以抓取手机的网络通信，但前提是手机和电脑处于同一局域网内（WI-FI或热点），然后进行以下设置： 用Fiddler对Android应用进行抓包打开Fiddler设置 在Connections里设置允许连接远程计算机，确认后重新启动Fiddler 在命令提示符下输入ipconfig查看本机IP 打开Android设备的“设置”-&amp;gt;“WLAN”，找到你要连接的网络，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fiddler进行手机抓包">
+<meta property="og:url" content="http://yoursite.com/2017/06/05/Fiddler进行手机抓包/index.html">
 <meta property="og:site_name" content="涂海林的个人博客">
+<meta property="og:description" content="通过Fiddler抓包工具，可以抓取手机的网络通信，但前提是手机和电脑处于同一局域网内（WI-FI或热点），然后进行以下设置： 用Fiddler对Android应用进行抓包打开Fiddler设置 在Connections里设置允许连接远程计算机，确认后重新启动Fiddler 在命令提示符下输入ipconfig查看本机IP 打开Android设备的“设置”-&amp;gt;“WLAN”，找到你要连接的网络，">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2017/06/05/Fiddler进行手机抓包/01-fidder.png">
+<meta property="og:image" content="http://yoursite.com/2017/06/05/Fiddler进行手机抓包/01-fidder_allow.png">
+<meta property="og:image" content="http://yoursite.com/2017/06/05/Fiddler进行手机抓包/ipconfig.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/06/05/Fiddler进行手机抓包/android.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/06/05/Fiddler进行手机抓包/setting.jpg">
+<meta property="og:updated_time" content="2019-02-12T14:27:40.702Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="涂海林的个人博客">
+<meta name="twitter:title" content="Fiddler进行手机抓包">
+<meta name="twitter:description" content="通过Fiddler抓包工具，可以抓取手机的网络通信，但前提是手机和电脑处于同一局域网内（WI-FI或热点），然后进行以下设置： 用Fiddler对Android应用进行抓包打开Fiddler设置 在Connections里设置允许连接远程计算机，确认后重新启动Fiddler 在命令提示符下输入ipconfig查看本机IP 打开Android设备的“设置”-&amp;gt;“WLAN”，找到你要连接的网络，">
+<meta name="twitter:image" content="http://yoursite.com/2017/06/05/Fiddler进行手机抓包/01-fidder.png">
   
     <link rel="alternative" href="/atom.xml" title="涂海林的个人博客" type="application/atom+xml">
   
@@ -144,60 +154,186 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Fiddler进行手机抓包" class="article article-type-post " itemscope="" itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/09/python搜狐爬虫/" class="archive-article-date">
-  	<time datetime="2018-04-09T02:46:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-09</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/09/python搜狐爬虫/">python搜狐爬虫</a>
+    <h1 class="article-title" itemprop="name">
+      Fiddler进行手机抓包
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2017/06/05/Fiddler进行手机抓包/" class="archive-article-date">
+  	<time datetime="2017-06-05T03:20:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>通过Fiddler抓包工具，可以抓取手机的网络通信，但前提是手机和电脑处于同一局域网内（WI-FI或热点），然后进行以下设置：</p>
+<h3 id="用Fiddler对Android应用进行抓包"><a href="#用Fiddler对Android应用进行抓包" class="headerlink" title="用Fiddler对Android应用进行抓包"></a>用Fiddler对Android应用进行抓包</h3><p>打开Fiddler设置<br><img src="/2017/06/05/Fiddler进行手机抓包/01-fidder.png" alt="fiddler设置"></p>
+<p>在Connections里设置允许连接远程计算机，确认后重新启动Fiddler<br><img src="/2017/06/05/Fiddler进行手机抓包/01-fidder_allow.png" alt="fiddler重启"></p>
+<p>在命令提示符下输入ipconfig查看本机IP<br><img src="/2017/06/05/Fiddler进行手机抓包/ipconfig.jpg" alt="查看本机IP"></p>
+<p>打开Android设备的“设置”-&gt;“WLAN”，找到你要连接的网络，在上面长按，然后选择“修改网络”，弹出网络设置对话框，然后勾选“显示高级选项。<br><img src="/2017/06/05/Fiddler进行手机抓包/android.jpg" alt="Android设备设置"></p>
+<p>在“代理”后面的输入框选择“手动”，在“代理服务器主机名”后面的输入框输入电脑的ip地址，在“代理服务器端口”后面的输入框输入8888，然后点击“保存”按钮。<br><img src="/2017/06/05/Fiddler进行手机抓包/setting.jpg" alt="代理设置"></p>
+<p>启动Android设备中的浏览器，访问网页即可在Fiddler中可以看到完成的请求和响应数据。</p>
+<h2 id="用Fiddler对iPhone手机应用进行抓包"><a href="#用Fiddler对iPhone手机应用进行抓包" class="headerlink" title="用Fiddler对iPhone手机应用进行抓包"></a>用Fiddler对iPhone手机应用进行抓包</h2><p>基本流程差不多，只是手机设置不太一样：</p>
+<p>iPhone手机：点击设置 &gt; 无线局域网 &gt; 无线网络 &gt; HTTP代理 &gt; 手动：</p>
+<p>代理地址(电脑IP)：192.168.xx.xxx</p>
+<p>端口号：8888</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/python//" class="article-tag-list-link color2">python</a>
+        			<a href="/categories/爬虫//" class="article-tag-list-link color3">爬虫</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/06/05/Fiddler进行手机抓包/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/06/23/IT桔子分布式爬虫/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          IT桔子分布式爬虫
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/05/31/三种scrapy模拟登陆策略/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">三种scrapy模拟登录策略</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -220,8 +356,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

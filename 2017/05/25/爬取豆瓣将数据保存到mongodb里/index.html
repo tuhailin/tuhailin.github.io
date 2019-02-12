@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018 | 涂海林的个人博客</title>
+  <title>用Pymongo保存数据 | 涂海林的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="涂海林的个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="爬取豆瓣电影top250movie.douban.com/top250的电影数据，并保存在MongoDB中。 1. items.py123456789class DoubanspiderItem(scrapy.Item):    # 电影标题    title = scrapy.Field()    # 电影评分    score = scrapy.Field()    # 电影信息    con">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用Pymongo保存数据">
+<meta property="og:url" content="http://yoursite.com/2017/05/25/爬取豆瓣将数据保存到mongodb里/index.html">
 <meta property="og:site_name" content="涂海林的个人博客">
+<meta property="og:description" content="爬取豆瓣电影top250movie.douban.com/top250的电影数据，并保存在MongoDB中。 1. items.py123456789class DoubanspiderItem(scrapy.Item):    # 电影标题    title = scrapy.Field()    # 电影评分    score = scrapy.Field()    # 电影信息    con">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-02-12T13:19:37.006Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="涂海林的个人博客">
+<meta name="twitter:title" content="用Pymongo保存数据">
+<meta name="twitter:description" content="爬取豆瓣电影top250movie.douban.com/top250的电影数据，并保存在MongoDB中。 1. items.py123456789class DoubanspiderItem(scrapy.Item):    # 电影标题    title = scrapy.Field()    # 电影评分    score = scrapy.Field()    # 电影信息    con">
   
     <link rel="alternative" href="/atom.xml" title="涂海林的个人博客" type="application/atom+xml">
   
@@ -144,60 +148,181 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-爬取豆瓣将数据保存到mongodb里" class="article article-type-post " itemscope="" itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/09/python搜狐爬虫/" class="archive-article-date">
-  	<time datetime="2018-04-09T02:46:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-09</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/09/python搜狐爬虫/">python搜狐爬虫</a>
+    <h1 class="article-title" itemprop="name">
+      用Pymongo保存数据
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2017/05/25/爬取豆瓣将数据保存到mongodb里/" class="archive-article-date">
+  	<time datetime="2017-05-25T07:22:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>爬取豆瓣电影top250movie.douban.com/top250的电影数据，并保存在MongoDB中。</p>
+<h2 id="1-items-py"><a href="#1-items-py" class="headerlink" title="1. items.py"></a>1. items.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">class DoubanspiderItem(scrapy.Item):</span><br><span class="line">    <span class="comment"># 电影标题</span></span><br><span class="line">    title = scrapy.Field()</span><br><span class="line">    <span class="comment"># 电影评分</span></span><br><span class="line">    score = scrapy.Field()</span><br><span class="line">    <span class="comment"># 电影信息</span></span><br><span class="line">    content = scrapy.Field()</span><br><span class="line">    <span class="comment"># 简介</span></span><br><span class="line">    info = scrapy.Field()</span><br></pre></td></tr></table></figure>
+<h3 id="2-spiders-douban-py"><a href="#2-spiders-douban-py" class="headerlink" title="2. spiders/douban.py"></a>2. spiders/douban.py</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line">from doubanSpider.items import DoubanspiderItem</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class DoubanSpider(scrapy.Spider):</span><br><span class="line">    name = <span class="string">"douban"</span></span><br><span class="line">    allowed_domains = [<span class="string">"movie.douban.com"</span>]</span><br><span class="line">    start = 0</span><br><span class="line">    url = <span class="string">'https://movie.douban.com/top250?start='</span></span><br><span class="line">    end = <span class="string">'&amp;filter='</span></span><br><span class="line">    start_urls = [url + str(start) + end]</span><br><span class="line"></span><br><span class="line">    def parse(self, response):</span><br><span class="line"></span><br><span class="line">        item = DoubanspiderItem()</span><br><span class="line"></span><br><span class="line">        movies = response.xpath(<span class="string">"//div[@class=\'info\']"</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> each <span class="keyword">in</span> movies:</span><br><span class="line">            title = each.xpath(<span class="string">'div[@class="hd"]/a/span[@class="title"]/text()'</span>).extract()</span><br><span class="line">            content = each.xpath(<span class="string">'div[@class="bd"]/p/text()'</span>).extract()</span><br><span class="line">            score = each.xpath(<span class="string">'div[@class="bd"]/div[@class="star"]/span[@class="rating_num"]/text()'</span>).extract()</span><br><span class="line">            info = each.xpath(<span class="string">'div[@class="bd"]/p[@class="quote"]/span/text()'</span>).extract()</span><br><span class="line"></span><br><span class="line">            item[<span class="string">'title'</span>] = title[0]</span><br><span class="line">            <span class="comment"># 以;作为分隔，将content列表里所有元素合并成一个新的字符串</span></span><br><span class="line">            item[<span class="string">'content'</span>] = <span class="string">';'</span>.join(content)</span><br><span class="line">            item[<span class="string">'score'</span>] = score[0]</span><br><span class="line">            item[<span class="string">'info'</span>] = info[0]</span><br><span class="line">            <span class="comment"># 提交item</span></span><br><span class="line"></span><br><span class="line">            yield item</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> self.start &lt;= 225:</span><br><span class="line">            self.start += 25</span><br><span class="line">            yield scrapy.Request(self.url + str(self.start) + self.end, callback=self.parse)</span><br></pre></td></tr></table></figure>
+<h2 id="3-设置setting-py"><a href="#3-设置setting-py" class="headerlink" title="3. 设置setting.py"></a>3. 设置setting.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">BOT_NAME = <span class="string">'doubanSpider'</span></span><br><span class="line"></span><br><span class="line">SPIDER_MODULES = [<span class="string">'doubanSpider.spiders'</span>]</span><br><span class="line">NEWSPIDER_MODULE = <span class="string">'doubanSpider.spiders'</span></span><br><span class="line"></span><br><span class="line">ITEM_PIPELINES = &#123;</span><br><span class="line">        <span class="string">'doubanSpider.pipelines.DoubanspiderPipeline'</span> : 300</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Crawl responsibly by identifying yourself (and your website) on the user-agent</span></span><br><span class="line">USER_AGENT = <span class="string">'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># MONGODB 主机环回地址127.0.0.1</span></span><br><span class="line">MONGODB_HOST = <span class="string">'127.0.0.1'</span></span><br><span class="line"><span class="comment"># 端口号，默认是27017</span></span><br><span class="line">MONGODB_PORT = 27017</span><br><span class="line"><span class="comment"># 设置数据库名称</span></span><br><span class="line">MONGODB_DBNAME = <span class="string">'DouBan'</span></span><br><span class="line"><span class="comment"># 存放本次数据的表名称</span></span><br><span class="line">MONGODB_DOCNAME = <span class="string">'DouBanMovies'</span></span><br></pre></td></tr></table></figure>
+<h2 id="4-pipelines-py"><a href="#4-pipelines-py" class="headerlink" title="4. pipelines.py"></a>4. pipelines.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">from scrapy.conf import settings</span><br><span class="line">import pymongo</span><br><span class="line"></span><br><span class="line">class DoubanspiderPipeline(object):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        <span class="comment"># 获取setting主机名、端口号和数据库名</span></span><br><span class="line">        host = settings[<span class="string">'MONGODB_HOST'</span>]</span><br><span class="line">        port = settings[<span class="string">'MONGODB_PORT'</span>]</span><br><span class="line">        dbname = settings[<span class="string">'MONGODB_DBNAME'</span>]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># pymongo.MongoClient(host, port) 创建MongoDB链接</span></span><br><span class="line">        client = pymongo.MongoClient(host=host,port=port)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 指向指定的数据库</span></span><br><span class="line">        mdb = client[dbname]</span><br><span class="line">        <span class="comment"># 获取数据库里存放数据的表名</span></span><br><span class="line">        self.post = mdb[settings[<span class="string">'MONGODB_DOCNAME'</span>]]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    def process_item(self, item, spider):</span><br><span class="line">        data = dict(item)</span><br><span class="line">        <span class="comment"># 向指定的表里添加数据</span></span><br><span class="line">        self.post.insert(data)</span><br><span class="line">        <span class="built_in">return</span> item</span><br></pre></td></tr></table></figure>
+<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">启动MongoDB数据库需要两个命令：</span><br><span class="line"></span><br><span class="line">mongod：是mongoDB数据库进程本身</span><br><span class="line">mongo：是命令行shell客户端</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">sudo mongod <span class="comment"># 首先启动数据库服务，再执行Scrapy</span></span><br><span class="line">sudo mongo <span class="comment"># 启动数据库shell</span></span><br><span class="line"></span><br><span class="line">在mongo shell下使用命令:</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前数据库</span></span><br><span class="line">&gt; db</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出所有的数据库</span></span><br><span class="line">&gt; show dbs</span><br><span class="line"></span><br><span class="line"><span class="comment"># 连接DouBan数据库</span></span><br><span class="line">&gt; use DouBan</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出所有表</span></span><br><span class="line">&gt; show collections</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看表里的数据</span></span><br><span class="line">&gt; db.DouBanMoives.find()</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/python//" class="article-tag-list-link color2">python</a>
+        			<a href="/categories/爬虫//" class="article-tag-list-link color3">爬虫</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/05/25/爬取豆瓣将数据保存到mongodb里/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/05/31/三种scrapy模拟登陆策略/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          三种scrapy模拟登录策略
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/05/10/新浪网分类资讯爬虫/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">新浪网分类资讯爬虫</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -220,8 +345,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018 | 涂海林的个人博客</title>
+  <title>斗鱼直播爬虫 | 涂海林的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="涂海林的个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="1. items.py1234class DouyuspiderItem(scrapy.Item):    name = scrapy.Field()# 存储照片的名字    imagesUrls = scrapy.Field()# 照片的url路径    imagesPath = scrapy.Field()# 照片保存在本地的路径 2. spiders/douyu.py123456789101">
+<meta property="og:type" content="article">
+<meta property="og:title" content="斗鱼直播爬虫">
+<meta property="og:url" content="http://yoursite.com/2017/04/20/scrapy实现斗鱼直播爬虫/index.html">
 <meta property="og:site_name" content="涂海林的个人博客">
+<meta property="og:description" content="1. items.py1234class DouyuspiderItem(scrapy.Item):    name = scrapy.Field()# 存储照片的名字    imagesUrls = scrapy.Field()# 照片的url路径    imagesPath = scrapy.Field()# 照片保存在本地的路径 2. spiders/douyu.py123456789101">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-02-12T09:16:49.645Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="涂海林的个人博客">
+<meta name="twitter:title" content="斗鱼直播爬虫">
+<meta name="twitter:description" content="1. items.py1234class DouyuspiderItem(scrapy.Item):    name = scrapy.Field()# 存储照片的名字    imagesUrls = scrapy.Field()# 照片的url路径    imagesPath = scrapy.Field()# 照片保存在本地的路径 2. spiders/douyu.py123456789101">
   
     <link rel="alternative" href="/atom.xml" title="涂海林的个人博客" type="application/atom+xml">
   
@@ -144,37 +148,62 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-scrapy实现斗鱼直播爬虫" class="article article-type-post " itemscope="" itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/09/python搜狐爬虫/" class="archive-article-date">
-  	<time datetime="2018-04-09T02:46:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-09</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/09/python搜狐爬虫/">python搜狐爬虫</a>
+    <h1 class="article-title" itemprop="name">
+      斗鱼直播爬虫
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2017/04/20/scrapy实现斗鱼直播爬虫/" class="archive-article-date">
+  	<time datetime="2017-04-20T03:46:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-items-py"><a href="#1-items-py" class="headerlink" title="1. items.py"></a>1. items.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">class DouyuspiderItem(scrapy.Item):</span><br><span class="line">    name = scrapy.Field()<span class="comment"># 存储照片的名字</span></span><br><span class="line">    imagesUrls = scrapy.Field()<span class="comment"># 照片的url路径</span></span><br><span class="line">    imagesPath = scrapy.Field()<span class="comment"># 照片保存在本地的路径</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-spiders-douyu-py"><a href="#2-spiders-douyu-py" class="headerlink" title="2. spiders/douyu.py"></a>2. spiders/douyu.py</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line">import json</span><br><span class="line">from douyuSpider.items import DouyuspiderItem</span><br><span class="line"></span><br><span class="line">class DouyuSpider(scrapy.Spider):</span><br><span class="line">    name = <span class="string">"douyu"</span></span><br><span class="line">    allowd_domains = [<span class="string">"http://capi.douyucdn.cn"</span>]</span><br><span class="line"></span><br><span class="line">    offset = 0</span><br><span class="line">    url = <span class="string">"http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=20&amp;offset="</span></span><br><span class="line">    start_urls = [url + str(offset)]</span><br><span class="line"></span><br><span class="line">  def parse(self, response):</span><br><span class="line">      <span class="comment"># 返回从json里获取 data段数据集合</span></span><br><span class="line">      data = json.loads(response.text)[<span class="string">"data"</span>]</span><br><span class="line"></span><br><span class="line">      <span class="keyword">for</span> each <span class="keyword">in</span> data:</span><br><span class="line">          item = DouyuspiderItem()</span><br><span class="line">          item[<span class="string">"name"</span>] = each[<span class="string">"nickname"</span>]</span><br><span class="line">          item[<span class="string">"imagesUrls"</span>] = each[<span class="string">"vertical_src"</span>]</span><br><span class="line"></span><br><span class="line">          yield item</span><br><span class="line"></span><br><span class="line">      self.offset += 20</span><br><span class="line">      yield scrapy.Request(self.url + str(self.offset), callback = self.parse)</span><br></pre></td></tr></table></figure>
+<h2 id="3-设置setting-py"><a href="#3-设置setting-py" class="headerlink" title="3. 设置setting.py"></a>3. 设置setting.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ITEM_PIPELINES = &#123;<span class="string">'douyuSpider.pipelines.ImagesPipeline'</span>: 1&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Images 的存放位置，之后会在pipelines.py里调用</span></span><br><span class="line">IMAGES_STORE = <span class="string">"/Users/Power/lesson_python/douyuSpider/Images"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># user-agent</span></span><br><span class="line">USER_AGENT = <span class="string">'DYZB/2.290 (iPhone; iOS 9.3.4; Scale/2.00)'</span></span><br></pre></td></tr></table></figure>
+<h2 id="4-pipelines-py"><a href="#4-pipelines-py" class="headerlink" title="4. pipelines.py"></a>4. pipelines.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line">import os</span><br><span class="line">from scrapy.pipelines.images import ImagesPipeline</span><br><span class="line">from scrapy.utils.project import get_project_settings</span><br><span class="line"></span><br><span class="line">class ImagesPipeline(ImagesPipeline):</span><br><span class="line">    IMAGES_STORE = get_project_settings().get(<span class="string">"IMAGES_STORE"</span>)</span><br><span class="line"></span><br><span class="line">    def get_media_requests(self, item, info):</span><br><span class="line">        image_url = item[<span class="string">"imagesUrls"</span>]</span><br><span class="line">        yield scrapy.Request(image_url)</span><br><span class="line"></span><br><span class="line">    def item_completed(self, results, item, info):</span><br><span class="line">        <span class="comment"># 固定写法，获取图片路径，同时判断这个路径是否正确，如果正确，就放到 image_path里，ImagesPipeline源码剖析可见</span></span><br><span class="line">        image_path = [x[<span class="string">"path"</span>] <span class="keyword">for</span> ok, x <span class="keyword">in</span> results <span class="keyword">if</span> ok]</span><br><span class="line"></span><br><span class="line">        os.rename(self.IMAGES_STORE + <span class="string">"/"</span> + image_path[0], self.IMAGES_STORE + <span class="string">"/"</span> + item[<span class="string">"name"</span>] + <span class="string">".jpg"</span>)</span><br><span class="line">        item[<span class="string">"imagesPath"</span>] = self.IMAGES_STORE + <span class="string">"/"</span> + item[<span class="string">"name"</span>]</span><br><span class="line"></span><br><span class="line">        <span class="built_in">return</span> item</span><br><span class="line"></span><br><span class="line"><span class="comment">#get_media_requests的作用就是为每一个图片链接生成一个Request对象，这个方法的输出将作为item_completed的输入中的results，results是一个元组，每个元组包括(success, imageinfoorfailure)。如果success=true，imageinfoor_failure是一个字典，包括url/path/checksum三个key。</span></span><br><span class="line">在项目根目录下新建main.py文件,用于调试</span><br><span class="line">from scrapy import cmdline</span><br><span class="line">cmdline.execute(<span class="string">'scrapy crawl douyu'</span>.split())</span><br><span class="line">执行程序</span><br><span class="line">py2 main.py</span><br></pre></td></tr></table></figure>
+<h2 id="在项目根目录下新建main-py文件-用于调试"><a href="#在项目根目录下新建main-py文件-用于调试" class="headerlink" title="在项目根目录下新建main.py文件,用于调试"></a>在项目根目录下新建main.py文件,用于调试</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">from scrapy import cmdline</span><br><span class="line">cmdline.execute(<span class="string">'scrapy crawl douyu'</span>.split())</span><br></pre></td></tr></table></figure>
+<h2 id="执行程序"><a href="#执行程序" class="headerlink" title="执行程序"></a>执行程序</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py2 main.py</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -187,17 +216,113 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/04/20/scrapy实现斗鱼直播爬虫/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/04/29/阳光热线问政平台/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          阳光热线问政平台
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/04/01/python糗事百科/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">python爬取糗事百科</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -220,8 +345,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
