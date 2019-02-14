@@ -146,6 +146,246 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-ndarray的矩阵处理" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/02/ndarray的矩阵处理/">ndarray的矩阵处理</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/02/ndarray的矩阵处理/" class="archive-article-date">
+  	<time datetime="2018-10-02T01:33:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="ndarray的矩阵运算"><a href="#ndarray的矩阵运算" class="headerlink" title="ndarray的矩阵运算"></a>ndarray的矩阵运算</h2><p>数组是编程中的概念，矩阵、矢量是数学概念。</p>
+<p>在计算机编程中，矩阵可以用数组形式定义，矢量可以用结构定义!</p>
+<ol>
+<li>矢量运算：相同大小的数组间运算应用在元素上<br>示例代码（1）：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 矢量与矢量运算</span></span><br><span class="line">arr = np.array([[1, 2, 3],</span><br><span class="line">                [4, 5, 6]])</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">"元素相乘："</span>)</span><br><span class="line"><span class="built_in">print</span>(arr * arr)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">"矩阵相加："</span>)</span><br><span class="line"><span class="built_in">print</span>(arr + arr)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>运行结果：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">元素相乘：</span><br><span class="line">[[ 1  4  9]</span><br><span class="line"> [16 25 36]]</span><br><span class="line"></span><br><span class="line">矩阵相加：</span><br><span class="line">[[ 2  4  6]</span><br><span class="line"> [ 8 10 12]]</span><br></pre></td></tr></table></figure></p>
+<ol start="2">
+<li>矢量和标量运算：”广播” - 将标量”广播”到各个元素<br>示例代码（2）：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 矢量与标量运算</span></span><br><span class="line"><span class="built_in">print</span>(1. / arr)</span><br><span class="line"><span class="built_in">print</span>(2. * arr)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>运行结果：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[[ 1.          0.5         0.33333333]</span><br><span class="line"> [ 0.25        0.2         0.16666667]]</span><br><span class="line"></span><br><span class="line">[[  2.   4.   6.]</span><br><span class="line"> [  8.  10.  12.]]</span><br></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/numpy//" class="article-tag-list-link color1">numpy</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/02/ndarray的矩阵处理/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-上线地址项目" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/10/上线地址项目/">web上线项目</a>
+    </h1>
+  
+
+        
+        <a href="/2018/09/10/上线地址项目/" class="archive-article-date">
+  	<time datetime="2018-09-10T06:17:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="flask项目"><a href="#flask项目" class="headerlink" title="flask项目"></a>flask项目</h2><p>vouchersguru<br>地址: <a href="https://www.vouchersguru.co.uk" target="_blank" rel="noopener">coupons-外围站</a><br>vouchersfollow<br>地址: <a href="https://www.vouchersfollow.co.uk/" target="_blank" rel="noopener">coupons-外围站</a><br>couponsfine<br>地址: <a href="https://www.couponsfine.com/" target="_blank" rel="noopener">coupons-外围站</a><br>discountau<br>地址: <a href="https://www.discountau.com" target="_blank" rel="noopener">coupons-外围站</a></p>
+<h2 id="Django项目"><a href="#Django项目" class="headerlink" title="Django项目"></a>Django项目</h2><p>大数据可视化系统<br>地址: <a href="http://visual.gebodata.com" target="_blank" rel="noopener">大数据可视化系统</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/项目//" class="article-tag-list-link color3">项目</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/09/10/上线地址项目/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-django开发常见问题" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/03/django开发常见问题/">django开发常见问题</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/03/django开发常见问题/" class="archive-article-date">
+  	<time datetime="2018-07-03T07:49:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Django开发过程中遇到的问题和解决方案"><a href="#Django开发过程中遇到的问题和解决方案" class="headerlink" title="Django开发过程中遇到的问题和解决方案"></a>Django开发过程中遇到的问题和解决方案</h2><p>1.django向数据库中添加中文时报错<br>解决方案:创建数据库的时候设置编码格式</p>
+<p>2.django的信号使用无法触发信号里的内容<br>解决方案:在django 1.7后，使用信号时候需要在应用配置类中的ready() 方法中连接。<br>所以我们需要配置先ready()<br>需要在以下两个地方写入配置<br>需要在项目的app.py,init.py两个文件中写入配置</p>
+<p>3.django-admin.py:未找到命令<br>解决方案:将django的安装路径添加到环境变量中，<br>一般的安装路径在python目录下的\Lib\site-packages\Django-1.8-py2.7.egg\django\bin，<br>可能有不同，总之在python安装目录下找到django\bin即可。<br>添加完环境变量后记得重启命令提示符，否则还是提示错误。</p>
+<p>4.当我把 DEBUG = True设为False的时候运行 python manage.py runserver 的时候<br>报错 ： CommandError: You must set settings.ALLOWED_HOSTS if DEBUG is False.<br>解决方案: 在 setting.py 中添加 ALLOWED_HOSTS = [‘127.0.0.1‘, ‘localhost‘]</p>
+<p>5.外部机器无法访问本站点<br>然后在settings里修改ALLOWED_HOSTS = []，<br>改为ALLOWED_HOSTS = [‘*’,]</p>
+<p>6.django解决跨域请求的问题<br>解决方案:添加中间件,安装django-cors-headers<br>配置settings.py文件,添加<br>MIDDLEWARE_CLASSES = (<br>…<br>‘corsheaders.middleware.CorsMiddleware’,<br>‘django.middleware.common.CommonMiddleware’, # 注意顺序<br>…<br>) </p>
+<p>#跨域增加忽略<br>CORS_ALLOW_CREDENTIALS = True<br>CORS_ORIGIN_ALLOW_ALL = True<br>CORS_ORIGIN_WHITELIST = (<br>‘*’<br>)</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/django//" class="article-tag-list-link color2">django</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/03/django开发常见问题/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-python搜狐爬虫" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
@@ -219,36 +459,29 @@
 
 
   
-    <article id="post-IT桔子分布式爬虫" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+    <article id="post-配置MySQL时失败问题" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/23/IT桔子分布式爬虫/">IT桔子分布式爬虫</a>
+      <a class="article-title" href="/2018/01/24/配置MySQL时失败问题/">配置MySQL时失败</a>
     </h1>
   
 
         
-        <a href="/2017/06/23/IT桔子分布式爬虫/" class="archive-article-date">
-  	<time datetime="2017-06-23T05:20:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-23</time>
+        <a href="/2018/01/24/配置MySQL时失败问题/" class="archive-article-date">
+  	<time datetime="2018-01-24T06:13:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>IT桔子是关注IT互联网行业的结构化的公司数据库和商业信息服务提供商，于2013年5月21日上线。</p>
-<p>IT桔子致力于通过信息和数据的生产、聚合、挖掘、加工、处理，帮助目标用户和客户节约时间和金钱、提高效率，以辅助其各类商业行为，包括风险投资、收购、竞争情报、细分行业信息、国外公司产品信息数据服务等。</p>
-<p>用于需自行对所发表或采集的内容负责,因所发表或采集的内容引发的一切纠纷、损失，由该内容的发表或采集者承担全部直接或间接(连带)法律责任，IT桔子不承担任何法律责任。</p>
-<p>项目采集地址：<a href="http://www.itjuzi.com/company" target="_blank" rel="noopener">http://www.itjuzi.com/company</a></p>
-<h2 id="items-py"><a href="#items-py" class="headerlink" title="items.py"></a>items.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># items.py</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line">import scrapy</span><br><span class="line"></span><br><span class="line">class CompanyItem(scrapy.Item):</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 公司id (url数字部分)</span></span><br><span class="line">    info_id = scrapy.Field()</span><br><span class="line">    <span class="comment"># 公司名称</span></span><br><span class="line">    company_name = scrapy.Field()</span><br><span class="line">    <span class="comment"># 公司口号</span></span><br><span class="line">    slogan = scrapy.Field()</span><br><span class="line">    <span class="comment"># 分类</span></span><br><span class="line">    scope = scrapy.Field()</span><br><span class="line">    <span class="comment"># 子分类</span></span><br><span class="line">    sub_scope = scrapy.Field()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 所在城市</span></span><br><span class="line">    city = scrapy.Field()</span><br><span class="line">    <span class="comment"># 所在区域</span></span><br><span class="line">    area = scrapy.Field()</span><br><span class="line">    <span class="comment"># 公司主页</span></span><br><span class="line">    home_page = scrapy.Field()</span><br><span class="line">    <span class="comment"># 公司标签</span></span><br><span class="line">    tags = scrapy.Field()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 公司简介</span></span><br><span class="line">    company_intro = scrapy.Field()</span><br><span class="line">    <span class="comment"># 公司全称：</span></span><br><span class="line">    company_full_name = scrapy.Field()</span><br><span class="line">    <span class="comment"># 成立时间：</span></span><br><span class="line">    found_time = scrapy.Field()</span><br><span class="line">    <span class="comment"># 公司规模：</span></span><br><span class="line">    company_size = scrapy.Field()</span><br><span class="line">    <span class="comment"># 运营状态</span></span><br><span class="line">    company_status = scrapy.Field()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 投资情况列表：包含获投时间、融资阶段、融资金额、投资公司</span></span><br><span class="line">    tz_info = scrapy.Field()</span><br><span class="line">    <span class="comment"># 团队信息列表：包含成员姓名、成员职称、成员介绍</span></span><br><span class="line">    tm_info = scrapy.Field()</span><br><span class="line">    <span class="comment"># 产品信息列表：包含产品名称、产品类型、产品介绍</span></span><br><span class="line">    pdt_info = scrapy.Field()</span><br></pre></td></tr></table></figure>
-<h2 id="settings-py"><a href="#settings-py" class="headerlink" title="settings.py"></a>settings.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line">BOT_NAME = <span class="string">'itjuzi'</span></span><br><span class="line"></span><br><span class="line">SPIDER_MODULES = [<span class="string">'itjuzi.spiders'</span>]</span><br><span class="line">NEWSPIDER_MODULE = <span class="string">'itjuzi.spiders'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Enables scheduling storing requests queue in redis.</span></span><br><span class="line">SCHEDULER = <span class="string">"scrapy_redis.scheduler.Scheduler"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Ensure all spiders share same duplicates filter through redis.</span></span><br><span class="line">DUPEFILTER_CLASS = <span class="string">"scrapy_redis.dupefilter.RFPDupeFilter"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># REDIS_START_URLS_AS_SET = True</span></span><br><span class="line"></span><br><span class="line">COOKIES_ENABLED = False</span><br><span class="line"></span><br><span class="line">DOWNLOAD_DELAY = 1.5</span><br><span class="line"></span><br><span class="line"><span class="comment"># 支持随机下载延迟</span></span><br><span class="line">RANDOMIZE_DOWNLOAD_DELAY = True</span><br><span class="line"></span><br><span class="line"><span class="comment"># Obey robots.txt rules</span></span><br><span class="line">ROBOTSTXT_OBEY = False</span><br><span class="line"></span><br><span class="line">ITEM_PIPELINES = &#123;</span><br><span class="line">    <span class="string">'scrapy_redis.pipelines.RedisPipeline'</span>: 300</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">DOWNLOADER_MIDDLEWARES = &#123;</span><br><span class="line">    <span class="comment"># 该中间件将会收集失败的页面，并在爬虫完成后重新调度。（失败情况可能由于临时的问题，例如连接超时或者HTTP 500错误导致失败的页面）</span></span><br><span class="line">   <span class="string">'scrapy.downloadermiddlewares.retry.RetryMiddleware'</span>: 80,</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 该中间件提供了对request设置HTTP代理的支持。您可以通过在 Request 对象中设置 proxy 元数据来开启代理。</span></span><br><span class="line">    <span class="string">'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware'</span>: 100,</span><br><span class="line"></span><br><span class="line">    <span class="string">'itjuzi.middlewares.RotateUserAgentMiddleware'</span>: 200,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">REDIS_HOST = <span class="string">"192.168.199.108"</span></span><br><span class="line">REDIS_PORT = 6379</span><br></pre></td></tr></table></figure>
-<h2 id="middlewares-py"><a href="#middlewares-py" class="headerlink" title="middlewares.py"></a>middlewares.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line">from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware</span><br><span class="line">import random</span><br><span class="line"></span><br><span class="line"><span class="comment"># User-Agetn 下载中间件</span></span><br><span class="line">class RotateUserAgentMiddleware(UserAgentMiddleware):</span><br><span class="line">    def __init__(self, user_agent=<span class="string">''</span>):</span><br><span class="line">        self.user_agent = user_agent</span><br><span class="line"></span><br><span class="line">    def process_request(self, request, spider):</span><br><span class="line">        <span class="comment"># 这句话用于随机选择user-agent</span></span><br><span class="line">        ua = random.choice(self.user_agent_list)</span><br><span class="line">        request.headers.setdefault(<span class="string">'User-Agent'</span>, ua)</span><br><span class="line"></span><br><span class="line">    user_agent_list = [</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/19.77.34.5 Safari/537.1"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/531.21.8 (KHTML, like Gecko) Version/4.0.4 Safari/531.21.10"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko) Version/5.0.2 Safari/533.18.5"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB; rv:1.9.1.17) Gecko/20110123 (like Firefox/3.x) SeaMonkey/2.0.12"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 5.2; rv:10.0.1) Gecko/20100101 Firefox/10.0.1 SeaMonkey/2.7.1"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_8; en-US) AppleWebKit/532.8 (KHTML, like Gecko) Chrome/4.0.302.2 Safari/532.8"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.464.0 Safari/534.3"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_5; en-US) AppleWebKit/534.13 (KHTML, like Gecko) Chrome/9.0.597.15 Safari/534.13"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.186 Safari/535.1"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.54 Safari/535.2"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.36 Safari/535.7"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; U; Mac OS X Mach-O; en-US; rv:2.0a) Gecko/20040614 Firefox/3.0.0 "</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.0.3) Gecko/2008092414 Firefox/3.0.3"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1) Gecko/20090624 Firefox/3.5"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.14) Gecko/20110218 AlexaToolbar/alxf-2.0 Firefox/3.6.14"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.2.15) Gecko/20110303 Firefox/3.6.15"</span>,</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0.1) Gecko/20100101 Firefox/4.0.1"</span></span><br><span class="line">    ]</span><br></pre></td></tr></table></figure>
-<h2 id="spiders-juzi-py"><a href="#spiders-juzi-py" class="headerlink" title="spiders/juzi.py"></a>spiders/juzi.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line">from bs4 import BeautifulSoup</span><br><span class="line">from scrapy.linkextractors import LinkExtractor</span><br><span class="line">from scrapy.spiders import CrawlSpider, Rule</span><br><span class="line"></span><br><span class="line">from scrapy_redis.spiders import RedisCrawlSpider</span><br><span class="line">from itjuzi.items import CompanyItem</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class ITjuziSpider(RedisCrawlSpider):</span><br><span class="line">    name = <span class="string">'itjuzi'</span></span><br><span class="line">    allowed_domains = [<span class="string">'www.itjuzi.com'</span>]</span><br><span class="line">    <span class="comment"># start_urls = ['http://www.itjuzi.com/company']</span></span><br><span class="line">    redis_key = <span class="string">'itjuzispider:start_urls'</span></span><br><span class="line">    rules = [</span><br><span class="line">        <span class="comment"># 获取每一页的链接</span></span><br><span class="line">        Rule(link_extractor=LinkExtractor(allow=(<span class="string">'/company\?page=\d+'</span>))),</span><br><span class="line">        <span class="comment"># 获取每一个公司的详情</span></span><br><span class="line">        Rule(link_extractor=LinkExtractor(allow=(<span class="string">'/company/\d+'</span>)), callback=<span class="string">'parse_item'</span>)</span><br><span class="line">    ]</span><br><span class="line"></span><br><span class="line">    def parse_item(self, response):</span><br><span class="line">        soup = BeautifulSoup(response.body, <span class="string">'lxml'</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 开头部分： //div[@class="infoheadrow-v2 ugc-block-item"]</span></span><br><span class="line">        cpy1 = soup.find(<span class="string">'div'</span>, class_=<span class="string">'infoheadrow-v2'</span>)</span><br><span class="line">        <span class="keyword">if</span> cpy1:</span><br><span class="line">            <span class="comment"># 公司名称：//span[@class="title"]/b/text()[1]</span></span><br><span class="line">            company_name = cpy1.find(class_=<span class="string">'title'</span>).b.contents[0].strip().replace(<span class="string">'\t'</span>, <span class="string">''</span>).replace(<span class="string">'\n'</span>, <span class="string">''</span>)</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 口号： //div[@class="info-line"]/p</span></span><br><span class="line">            slogan = cpy1.find(class_=<span class="string">'info-line'</span>).p.get_text()</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 分类：子分类//span[@class="scope c-gray-aset"]/a[1]</span></span><br><span class="line">            scope_a = cpy1.find(class_=<span class="string">'scope c-gray-aset'</span>).find_all(<span class="string">'a'</span>)</span><br><span class="line">            <span class="comment"># 分类：//span[@class="scope c-gray-aset"]/a[1]</span></span><br><span class="line">            scope = scope_a[0].get_text().strip() <span class="keyword">if</span> len(scope_a) &gt; 0 <span class="keyword">else</span> <span class="string">''</span></span><br><span class="line">            <span class="comment"># 子分类：# //span[@class="scope c-gray-aset"]/a[2]</span></span><br><span class="line">            sub_scope = scope_a[1].get_text().strip() <span class="keyword">if</span> len(scope_a) &gt; 1 <span class="keyword">else</span> <span class="string">''</span></span><br><span class="line"></span><br><span class="line">            <span class="comment"># 城市+区域：//span[@class="loca c-gray-aset"]/a</span></span><br><span class="line">            city_a = cpy1.find(class_=<span class="string">'loca c-gray-aset'</span>).find_all(<span class="string">'a'</span>)</span><br><span class="line">            <span class="comment"># 城市：//span[@class="loca c-gray-aset"]/a[1]</span></span><br><span class="line">            city = city_a[0].get_text().strip() <span class="keyword">if</span> len(city_a) &gt; 0 <span class="keyword">else</span> <span class="string">''</span></span><br><span class="line">            <span class="comment"># 区域：//span[@class="loca c-gray-aset"]/a[2]</span></span><br><span class="line">            area = city_a[1].get_text().strip() <span class="keyword">if</span> len(city_a) &gt; 1 <span class="keyword">else</span> <span class="string">''</span></span><br><span class="line"></span><br><span class="line">            <span class="comment"># 主页：//a[@class="weblink marl10"]/@href</span></span><br><span class="line">            home_page = cpy1.find(class_=<span class="string">'weblink marl10'</span>)[<span class="string">'href'</span>]</span><br><span class="line">            <span class="comment"># 标签：//div[@class="tagset dbi c-gray-aset"]/a</span></span><br><span class="line">            tags = cpy1.find(class_=<span class="string">'tagset dbi c-gray-aset'</span>).get_text().strip().strip().replace(<span class="string">'\n'</span>, <span class="string">','</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#基本信息：//div[@class="block-inc-info on-edit-hide"]</span></span><br><span class="line">        cpy2 = soup.find(<span class="string">'div'</span>, class_=<span class="string">'block-inc-info on-edit-hide'</span>)</span><br><span class="line">        <span class="keyword">if</span> cpy2:</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 公司简介：//div[@class="block-inc-info on-edit-hide"]//div[@class="des"]</span></span><br><span class="line">            company_intro = cpy2.find(class_=<span class="string">'des'</span>).get_text().strip()</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 公司全称：成立时间：公司规模：运行状态：//div[@class="des-more"]</span></span><br><span class="line">            cpy2_content = cpy2.find(class_=<span class="string">'des-more'</span>).contents</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 公司全称：//div[@class="des-more"]/div[1]</span></span><br><span class="line">            company_full_name = cpy2_content[1].get_text().strip()[len(<span class="string">'公司全称：'</span>):] <span class="keyword">if</span> cpy2_content[1] <span class="keyword">else</span> <span class="string">''</span></span><br><span class="line"></span><br><span class="line">            <span class="comment"># 成立时间：//div[@class="des-more"]/div[2]/span[1]</span></span><br><span class="line">            found_time = cpy2_content[3].contents[1].get_text().strip()[len(<span class="string">'成立时间：'</span>):] <span class="keyword">if</span> cpy2_content[3] <span class="keyword">else</span> <span class="string">''</span></span><br><span class="line"></span><br><span class="line">            <span class="comment"># 公司规模：//div[@class="des-more"]/div[2]/span[2]</span></span><br><span class="line">            company_size = cpy2_content[3].contents[3].get_text().strip()[len(<span class="string">'公司规模：'</span>):] <span class="keyword">if</span> cpy2_content[3] <span class="keyword">else</span> <span class="string">''</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">#运营状态：//div[@class="des-more"]/div[3]</span></span><br><span class="line">            company_status = cpy2_content[5].get_text().strip() <span class="keyword">if</span> cpy2_content[5] <span class="keyword">else</span> <span class="string">''</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 主体信息：</span></span><br><span class="line">        main = soup.find(<span class="string">'div'</span>, class_=<span class="string">'main'</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 投资情况：//table[@class="list-round-v2 need2login"]</span></span><br><span class="line">          <span class="comment"># 投资情况，包含获投时间、融资阶段、融资金额、投资公司</span></span><br><span class="line">        tz = main.find(<span class="string">'table'</span>, <span class="string">'list-round-v2'</span>)</span><br><span class="line">        tz_list = []</span><br><span class="line">        <span class="keyword">if</span> tz:</span><br><span class="line">            all_tr = tz.find_all(<span class="string">'tr'</span>)</span><br><span class="line">            <span class="keyword">for</span> tr <span class="keyword">in</span> all_tr:</span><br><span class="line">                tz_dict = &#123;&#125;</span><br><span class="line">                all_td = tr.find_all(<span class="string">'td'</span>)</span><br><span class="line">                tz_dict[<span class="string">'tz_time'</span>] = all_td[0].span.get_text().strip()</span><br><span class="line">                tz_dict[<span class="string">'tz_round'</span>] = all_td[1].get_text().strip()</span><br><span class="line">                tz_dict[<span class="string">'tz_finades'</span>] = all_td[2].get_text().strip()</span><br><span class="line">                tz_dict[<span class="string">'tz_capital'</span>] = all_td[3].get_text().strip().replace(<span class="string">'\n'</span>, <span class="string">','</span>)</span><br><span class="line">                tz_list.append(tz_dict)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 团队信息：成员姓名、成员职称、成员介绍</span></span><br><span class="line">        tm = main.find(<span class="string">'ul'</span>, class_=<span class="string">'list-prodcase limited-itemnum'</span>)</span><br><span class="line">        tm_list = []</span><br><span class="line">        <span class="keyword">if</span> tm:</span><br><span class="line">            <span class="keyword">for</span> li <span class="keyword">in</span> tm.find_all(<span class="string">'li'</span>):</span><br><span class="line">                tm_dict = &#123;&#125;</span><br><span class="line">                tm_dict[<span class="string">'tm_m_name'</span>] = li.find(<span class="string">'span'</span>, class_=<span class="string">'c'</span>).get_text().strip()</span><br><span class="line">                tm_dict[<span class="string">'tm_m_title'</span>] = li.find(<span class="string">'span'</span>, class_=<span class="string">'c-gray'</span>).get_text().strip()</span><br><span class="line">                tm_dict[<span class="string">'tm_m_intro'</span>] = li.find(<span class="string">'p'</span>, class_=<span class="string">'mart10 person-des'</span>).get_text().strip()</span><br><span class="line">                tm_list.append(tm_dict)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 产品信息：产品名称、产品类型、产品介绍</span></span><br><span class="line">        pdt = main.find(<span class="string">'ul'</span>, class_=<span class="string">'list-prod limited-itemnum'</span>)</span><br><span class="line">        pdt_list = []</span><br><span class="line">        <span class="keyword">if</span> pdt:</span><br><span class="line">            <span class="keyword">for</span> li <span class="keyword">in</span> pdt.find_all(<span class="string">'li'</span>):</span><br><span class="line">                pdt_dict = &#123;&#125;</span><br><span class="line">                pdt_dict[<span class="string">'pdt_name'</span>] = li.find(<span class="string">'h4'</span>).b.get_text().strip()</span><br><span class="line">                pdt_dict[<span class="string">'pdt_type'</span>] = li.find(<span class="string">'span'</span>, class_=<span class="string">'tag yellow'</span>).get_text().strip()</span><br><span class="line">                pdt_dict[<span class="string">'pdt_intro'</span>] = li.find(class_=<span class="string">'on-edit-hide'</span>).p.get_text().strip()</span><br><span class="line">                pdt_list.append(pdt_dict)</span><br><span class="line"></span><br><span class="line">        item = CompanyItem()</span><br><span class="line">        item[<span class="string">'info_id'</span>] = response.url.split(<span class="string">'/'</span>)[-1:][0]</span><br><span class="line">        item[<span class="string">'company_name'</span>] = company_name</span><br><span class="line">        item[<span class="string">'slogan'</span>] = slogan</span><br><span class="line">        item[<span class="string">'scope'</span>] = scope</span><br><span class="line">        item[<span class="string">'sub_scope'</span>] = sub_scope</span><br><span class="line">        item[<span class="string">'city'</span>] = city</span><br><span class="line">        item[<span class="string">'area'</span>] = area</span><br><span class="line">        item[<span class="string">'home_page'</span>] = home_page</span><br><span class="line">        item[<span class="string">'tags'</span>] = tags</span><br><span class="line">        item[<span class="string">'company_intro'</span>] = company_intro</span><br><span class="line">        item[<span class="string">'company_full_name'</span>] = company_full_name</span><br><span class="line">        item[<span class="string">'found_time'</span>] = found_time</span><br><span class="line">        item[<span class="string">'company_size'</span>] = company_size</span><br><span class="line">        item[<span class="string">'company_status'</span>] = company_status</span><br><span class="line">        item[<span class="string">'tz_info'</span>] = tz_list</span><br><span class="line">        item[<span class="string">'tm_info'</span>] = tm_list</span><br><span class="line">        item[<span class="string">'pdt_info'</span>] = pdt_list</span><br><span class="line">        <span class="built_in">return</span> item</span><br></pre></td></tr></table></figure>
-<h2 id="scrapy-cfg"><a href="#scrapy-cfg" class="headerlink" title="scrapy.cfg"></a>scrapy.cfg</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Automatically created by: scrapy startproject</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># For more information about the [deploy] section see:</span></span><br><span class="line"><span class="comment"># https://scrapyd.readthedocs.org/en/latest/deploy.html</span></span><br><span class="line"></span><br><span class="line">[settings]</span><br><span class="line">default = itjuzi.settings</span><br><span class="line"></span><br><span class="line">[deploy]</span><br><span class="line"><span class="comment">#url = http://localhost:6800/</span></span><br><span class="line">project = itjuzi</span><br></pre></td></tr></table></figure>
-<h2 id="运行："><a href="#运行：" class="headerlink" title="运行："></a>运行：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Slave端：</span><br><span class="line">scrapy runspider juzi.py</span><br><span class="line"></span><br><span class="line">Master端：</span><br><span class="line">redis-cli &gt; lpush itjuzispider:start_urls http://www.itjuzi.com/company</span><br></pre></td></tr></table></figure>
+        <h2 id="配置MySQL时失败（解决一天的bug）"><a href="#配置MySQL时失败（解决一天的bug）" class="headerlink" title="配置MySQL时失败（解决一天的bug）"></a>配置MySQL时失败（解决一天的bug）</h2><p>在Flask-SQLAlchemy中，数据库由URL指定。流行的数据库引擎URL格式如下：<br>MySQL    SQLite<br>其实格式也没有问题，底层原理不清楚，猜测应该还是接口问题。mysql配置(ubuntu的话需要安装一些Pymysql，python mysqldb，什么乱七八糟的东西我都下了，当然还是未能按如上格式配置成功，因为还有一个叫flask-mysql的东西！！！！搞得我都不知道哪个起作用了…总的来说就是flask-mysql最重要….不装不能按如上的mysql格式配置</p>
+<p>mysql+mysqldb://username:password@hostname/database可以成功的，强迫症表示不试，一定要按原格式来！！</p>
+
       
 
       
@@ -262,7 +495,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/爬虫//" class="article-tag-list-link color3">爬虫</a>
+        			<a href="/categories/flask//" class="article-tag-list-link color1">flask</a>
         		</li>
       		
 		</ul>
@@ -271,7 +504,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/23/IT桔子分布式爬虫/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/01/24/配置MySQL时失败问题/">展开全文 >></a>
         </p>
       
 
@@ -301,37 +534,27 @@
 
 
   
-    <article id="post-Fiddler进行手机抓包" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+    <article id="post-POST请求数据丢失问题解决" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/05/Fiddler进行手机抓包/">Fiddler进行手机抓包</a>
+      <a class="article-title" href="/2018/01/22/POST请求数据丢失问题解决/">POST请求数据丢失问题解决</a>
     </h1>
   
 
         
-        <a href="/2017/06/05/Fiddler进行手机抓包/" class="archive-article-date">
-  	<time datetime="2017-06-05T03:20:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-05</time>
+        <a href="/2018/01/22/POST请求数据丢失问题解决/" class="archive-article-date">
+  	<time datetime="2018-01-22T09:13:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>通过Fiddler抓包工具，可以抓取手机的网络通信，但前提是手机和电脑处于同一局域网内（WI-FI或热点），然后进行以下设置：</p>
-<h3 id="用Fiddler对Android应用进行抓包"><a href="#用Fiddler对Android应用进行抓包" class="headerlink" title="用Fiddler对Android应用进行抓包"></a>用Fiddler对Android应用进行抓包</h3><p>打开Fiddler设置<br><img src="/2017/06/05/Fiddler进行手机抓包/01-fidder.png" alt="fiddler设置"></p>
-<p>在Connections里设置允许连接远程计算机，确认后重新启动Fiddler<br><img src="/2017/06/05/Fiddler进行手机抓包/01-fidder_allow.png" alt="fiddler重启"></p>
-<p>在命令提示符下输入ipconfig查看本机IP<br><img src="/2017/06/05/Fiddler进行手机抓包/ipconfig.jpg" alt="查看本机IP"></p>
-<p>打开Android设备的“设置”-&gt;“WLAN”，找到你要连接的网络，在上面长按，然后选择“修改网络”，弹出网络设置对话框，然后勾选“显示高级选项。<br><img src="/2017/06/05/Fiddler进行手机抓包/android.jpg" alt="Android设备设置"></p>
-<p>在“代理”后面的输入框选择“手动”，在“代理服务器主机名”后面的输入框输入电脑的ip地址，在“代理服务器端口”后面的输入框输入8888，然后点击“保存”按钮。<br><img src="/2017/06/05/Fiddler进行手机抓包/setting.jpg" alt="代理设置"></p>
-<p>启动Android设备中的浏览器，访问网页即可在Fiddler中可以看到完成的请求和响应数据。</p>
-<h2 id="用Fiddler对iPhone手机应用进行抓包"><a href="#用Fiddler对iPhone手机应用进行抓包" class="headerlink" title="用Fiddler对iPhone手机应用进行抓包"></a>用Fiddler对iPhone手机应用进行抓包</h2><p>基本流程差不多，只是手机设置不太一样：</p>
-<p>iPhone手机：点击设置 &gt; 无线局域网 &gt; 无线网络 &gt; HTTP代理 &gt; 手动：</p>
-<p>代理地址(电脑IP)：192.168.xx.xxx</p>
-<p>端口号：8888</p>
+        <h2 id="重定向后POST请求数据丢失。"><a href="#重定向后POST请求数据丢失。" class="headerlink" title="重定向后POST请求数据丢失。"></a>重定向后POST请求数据丢失。</h2><p>所以程序需要保存相关数据，所以可以将数据储存在用户会话session中，在请求之间“记住”数据。“默认情况下，session保存在客户端cookie中，使用SECRET_KEY（进行序列化的加密?)进行加密签名，如果修改了cookie中的内容，签名失效，session失效。</p>
 
       
 
@@ -346,7 +569,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/爬虫//" class="article-tag-list-link color3">爬虫</a>
+        			<a href="/categories/flask//" class="article-tag-list-link color1">flask</a>
         		</li>
       		
 		</ul>
@@ -355,7 +578,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/05/Fiddler进行手机抓包/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/01/22/POST请求数据丢失问题解决/">展开全文 >></a>
         </p>
       
 
@@ -385,33 +608,27 @@
 
 
   
-    <article id="post-三种scrapy模拟登陆策略" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+    <article id="post-TemplateNotFound问题解决" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/31/三种scrapy模拟登陆策略/">三种scrapy模拟登录策略</a>
+      <a class="article-title" href="/2018/01/13/TemplateNotFound问题解决/">TemplateNotFound问题解决</a>
     </h1>
   
 
         
-        <a href="/2017/05/31/三种scrapy模拟登陆策略/" class="archive-article-date">
-  	<time datetime="2017-05-31T02:20:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-31</time>
+        <a href="/2018/01/13/TemplateNotFound问题解决/" class="archive-article-date">
+  	<time datetime="2018-01-13T09:13:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-13</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>注意：模拟登陆时，必须保证settings.py里的 COOKIES_ENABLED (Cookies中间件) 处于开启状态</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">COOKIES_ENABLED = True 或 <span class="comment"># COOKIES_ENABLED = False</span></span><br></pre></td></tr></table></figure>
-<h3 id="策略一：直接POST数据（比如需要登陆的账户信息"><a href="#策略一：直接POST数据（比如需要登陆的账户信息" class="headerlink" title="策略一：直接POST数据（比如需要登陆的账户信息)"></a>策略一：直接POST数据（比如需要登陆的账户信息)</h3><p>只要是需要提供post数据的，就可以用这种方法。下面示例里post的数据是账户密码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line">import scrapy</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Renren1Spider(scrapy.Spider):</span><br><span class="line">    name = <span class="string">"renren1"</span></span><br><span class="line">    allowed_domains = [<span class="string">"renren.com"</span>]</span><br><span class="line"></span><br><span class="line">    def start_requests(self):</span><br><span class="line">        url = <span class="string">'http://www.renren.com/PLogin.do'</span></span><br><span class="line">        <span class="comment"># FormRequest 是Scrapy发送POST请求的方法</span></span><br><span class="line">        yield scrapy.FormRequest(</span><br><span class="line">                url = url,</span><br><span class="line">                formdata = &#123;<span class="string">"email"</span> : <span class="string">"mr_mao_hacker@163.com"</span>, <span class="string">"password"</span> : <span class="string">"axxxxxxxe"</span>&#125;,</span><br><span class="line">                callback = self.parse_page)</span><br><span class="line"></span><br><span class="line">    def parse_page(self, response):</span><br><span class="line">        with open(<span class="string">"mao2.html"</span>, <span class="string">"w"</span>) as filename:</span><br><span class="line">            filename.write(response.body)</span><br></pre></td></tr></table></figure></p>
-<h2 id="策略二：标准的模拟登陆步骤"><a href="#策略二：标准的模拟登陆步骤" class="headerlink" title="策略二：标准的模拟登陆步骤"></a>策略二：标准的模拟登陆步骤</h2><p>正统模拟登录方法：</p>
-<p>首先发送登录页面的get请求，获取到页面里的登录必须的参数（比如说zhihu登陆界面的 _xsrf）</p>
-<p>然后和账户密码一起post到服务器，登录成功<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line">import scrapy</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Renren2Spider(scrapy.Spider):</span><br><span class="line">    name = <span class="string">"renren2"</span></span><br><span class="line">    allowed_domains = [<span class="string">"renren.com"</span>]</span><br><span class="line">    start_urls = (</span><br><span class="line">        <span class="string">"http://www.renren.com/PLogin.do"</span>,</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理start_urls里的登录url的响应内容，提取登陆需要的参数（如果需要的话)</span></span><br><span class="line">    def parse(self, response):</span><br><span class="line">        <span class="comment"># 提取登陆需要的参数</span></span><br><span class="line">        <span class="comment">#_xsrf = response.xpath("//_xsrf").extract()[0]</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 发送请求参数，并调用指定回调函数处理</span></span><br><span class="line">        yield scrapy.FormRequest.from_response(</span><br><span class="line">                response,</span><br><span class="line">                formdata = &#123;<span class="string">"email"</span> : <span class="string">"mr_mao_hacker@163.com"</span>, <span class="string">"password"</span> : <span class="string">"axxxxxxxe"</span>&#125;,<span class="comment">#, "_xsrf" = _xsrf&#125;,</span></span><br><span class="line">                callback = self.parse_page</span><br><span class="line">            )</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 获取登录成功状态，访问需要登录后才能访问的页面</span></span><br><span class="line">    def parse_page(self, response):</span><br><span class="line">        url = <span class="string">"http://www.renren.com/422167102/profile"</span></span><br><span class="line">        yield scrapy.Request(url, callback = self.parse_newpage)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理响应内容</span></span><br><span class="line">    def parse_newpage(self, response):</span><br><span class="line">        with open(<span class="string">"xiao.html"</span>, <span class="string">"w"</span>) as filename:</span><br><span class="line">            filename.write(response.body)</span><br></pre></td></tr></table></figure></p>
-<h2 id="策略三：直接使用保存登陆状态的Cookie模拟登陆"><a href="#策略三：直接使用保存登陆状态的Cookie模拟登陆" class="headerlink" title="策略三：直接使用保存登陆状态的Cookie模拟登陆"></a>策略三：直接使用保存登陆状态的Cookie模拟登陆</h2><p>如果实在没办法了，可以用这种方法模拟登录，虽然麻烦一点，但是成功率100%<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line">import scrapy</span><br><span class="line"></span><br><span class="line">class RenrenSpider(scrapy.Spider):</span><br><span class="line">    name = <span class="string">"renren"</span></span><br><span class="line">    allowed_domains = [<span class="string">"renren.com"</span>]</span><br><span class="line">    start_urls = (</span><br><span class="line">        <span class="string">'http://www.renren.com/111111'</span>,</span><br><span class="line">        <span class="string">'http://www.renren.com/222222'</span>,</span><br><span class="line">        <span class="string">'http://www.renren.com/333333'</span>,</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    cookies = &#123;</span><br><span class="line">    <span class="string">"anonymid"</span> : <span class="string">"ixrna3fysufnwv"</span>,</span><br><span class="line">    <span class="string">"_r01_"</span> : <span class="string">"1"</span>,</span><br><span class="line">    <span class="string">"ap"</span> : <span class="string">"327550029"</span>,</span><br><span class="line">    <span class="string">"JSESSIONID"</span> : <span class="string">"abciwg61A_RvtaRS3GjOv"</span>,</span><br><span class="line">    <span class="string">"depovince"</span> : <span class="string">"GW"</span>,</span><br><span class="line">    <span class="string">"springskin"</span> : <span class="string">"set"</span>,</span><br><span class="line">    <span class="string">"jebe_key"</span> : <span class="string">"f6fb270b-d06d-42e6-8b53-e67c3156aa7e%7Cc13c37f53bca9e1e7132d4b58ce00fa3%7C1484060607478%7C1%7C1486198628950"</span>,</span><br><span class="line">    <span class="string">"t"</span> : <span class="string">"691808127750a83d33704a565d8340ae9"</span>,</span><br><span class="line">    <span class="string">"societyguester"</span> : <span class="string">"691808127750a83d33704a565d8340ae9"</span>,</span><br><span class="line">    <span class="string">"id"</span> : <span class="string">"327550029"</span>,</span><br><span class="line">    <span class="string">"xnsid"</span> : <span class="string">"f42b25cf"</span>,</span><br><span class="line">    <span class="string">"loginfrom"</span> : <span class="string">"syshome"</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 可以重写Spider类的start_requests方法，附带Cookie值，发送POST请求</span></span><br><span class="line">    def start_requests(self):</span><br><span class="line">        <span class="keyword">for</span> url <span class="keyword">in</span> self.start_urls:</span><br><span class="line">            yield scrapy.FormRequest(url, cookies = self.cookies, callback = self.parse_page)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理响应内容</span></span><br><span class="line">    def parse_page(self, response):</span><br><span class="line">        <span class="built_in">print</span> <span class="string">"==========="</span> + response.url</span><br><span class="line">        with open(<span class="string">"deng.html"</span>, <span class="string">"w"</span>) as filename:</span><br><span class="line">            filename.write(response.body)</span><br></pre></td></tr></table></figure></p>
+        <h2 id="TemplateNotFound-bootstrap-wtf-html"><a href="#TemplateNotFound-bootstrap-wtf-html" class="headerlink" title="TemplateNotFound: bootstrap/wtf.html?"></a>TemplateNotFound: bootstrap/wtf.html?</h2><p>因为在manage.py中没有  bootstrap = Bootstrap(app)</p>
 
       
 
@@ -426,7 +643,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/爬虫//" class="article-tag-list-link color3">爬虫</a>
+        			<a href="/categories/flask//" class="article-tag-list-link color1">flask</a>
         		</li>
       		
 		</ul>
@@ -435,7 +652,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/31/三种scrapy模拟登陆策略/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/01/13/TemplateNotFound问题解决/">展开全文 >></a>
         </p>
       
 
@@ -465,32 +682,27 @@
 
 
   
-    <article id="post-爬取豆瓣将数据保存到mongodb里" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+    <article id="post-发送请求时服务端报如下错误" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/25/爬取豆瓣将数据保存到mongodb里/">用Pymongo保存数据</a>
+      <a class="article-title" href="/2017/12/23/发送请求时服务端报如下错误/">发送请求时服务端报如下错误</a>
     </h1>
   
 
         
-        <a href="/2017/05/25/爬取豆瓣将数据保存到mongodb里/" class="archive-article-date">
-  	<time datetime="2017-05-25T07:22:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-25</time>
+        <a href="/2017/12/23/发送请求时服务端报如下错误/" class="archive-article-date">
+  	<time datetime="2017-12-23T12:13:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>爬取豆瓣电影top250movie.douban.com/top250的电影数据，并保存在MongoDB中。</p>
-<h2 id="1-items-py"><a href="#1-items-py" class="headerlink" title="1. items.py"></a>1. items.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">class DoubanspiderItem(scrapy.Item):</span><br><span class="line">    <span class="comment"># 电影标题</span></span><br><span class="line">    title = scrapy.Field()</span><br><span class="line">    <span class="comment"># 电影评分</span></span><br><span class="line">    score = scrapy.Field()</span><br><span class="line">    <span class="comment"># 电影信息</span></span><br><span class="line">    content = scrapy.Field()</span><br><span class="line">    <span class="comment"># 简介</span></span><br><span class="line">    info = scrapy.Field()</span><br></pre></td></tr></table></figure>
-<h3 id="2-spiders-douban-py"><a href="#2-spiders-douban-py" class="headerlink" title="2. spiders/douban.py"></a>2. spiders/douban.py</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line">from doubanSpider.items import DoubanspiderItem</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class DoubanSpider(scrapy.Spider):</span><br><span class="line">    name = <span class="string">"douban"</span></span><br><span class="line">    allowed_domains = [<span class="string">"movie.douban.com"</span>]</span><br><span class="line">    start = 0</span><br><span class="line">    url = <span class="string">'https://movie.douban.com/top250?start='</span></span><br><span class="line">    end = <span class="string">'&amp;filter='</span></span><br><span class="line">    start_urls = [url + str(start) + end]</span><br><span class="line"></span><br><span class="line">    def parse(self, response):</span><br><span class="line"></span><br><span class="line">        item = DoubanspiderItem()</span><br><span class="line"></span><br><span class="line">        movies = response.xpath(<span class="string">"//div[@class=\'info\']"</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> each <span class="keyword">in</span> movies:</span><br><span class="line">            title = each.xpath(<span class="string">'div[@class="hd"]/a/span[@class="title"]/text()'</span>).extract()</span><br><span class="line">            content = each.xpath(<span class="string">'div[@class="bd"]/p/text()'</span>).extract()</span><br><span class="line">            score = each.xpath(<span class="string">'div[@class="bd"]/div[@class="star"]/span[@class="rating_num"]/text()'</span>).extract()</span><br><span class="line">            info = each.xpath(<span class="string">'div[@class="bd"]/p[@class="quote"]/span/text()'</span>).extract()</span><br><span class="line"></span><br><span class="line">            item[<span class="string">'title'</span>] = title[0]</span><br><span class="line">            <span class="comment"># 以;作为分隔，将content列表里所有元素合并成一个新的字符串</span></span><br><span class="line">            item[<span class="string">'content'</span>] = <span class="string">';'</span>.join(content)</span><br><span class="line">            item[<span class="string">'score'</span>] = score[0]</span><br><span class="line">            item[<span class="string">'info'</span>] = info[0]</span><br><span class="line">            <span class="comment"># 提交item</span></span><br><span class="line"></span><br><span class="line">            yield item</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> self.start &lt;= 225:</span><br><span class="line">            self.start += 25</span><br><span class="line">            yield scrapy.Request(self.url + str(self.start) + self.end, callback=self.parse)</span><br></pre></td></tr></table></figure>
-<h2 id="3-设置setting-py"><a href="#3-设置setting-py" class="headerlink" title="3. 设置setting.py"></a>3. 设置setting.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">BOT_NAME = <span class="string">'doubanSpider'</span></span><br><span class="line"></span><br><span class="line">SPIDER_MODULES = [<span class="string">'doubanSpider.spiders'</span>]</span><br><span class="line">NEWSPIDER_MODULE = <span class="string">'doubanSpider.spiders'</span></span><br><span class="line"></span><br><span class="line">ITEM_PIPELINES = &#123;</span><br><span class="line">        <span class="string">'doubanSpider.pipelines.DoubanspiderPipeline'</span> : 300</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Crawl responsibly by identifying yourself (and your website) on the user-agent</span></span><br><span class="line">USER_AGENT = <span class="string">'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># MONGODB 主机环回地址127.0.0.1</span></span><br><span class="line">MONGODB_HOST = <span class="string">'127.0.0.1'</span></span><br><span class="line"><span class="comment"># 端口号，默认是27017</span></span><br><span class="line">MONGODB_PORT = 27017</span><br><span class="line"><span class="comment"># 设置数据库名称</span></span><br><span class="line">MONGODB_DBNAME = <span class="string">'DouBan'</span></span><br><span class="line"><span class="comment"># 存放本次数据的表名称</span></span><br><span class="line">MONGODB_DOCNAME = <span class="string">'DouBanMovies'</span></span><br></pre></td></tr></table></figure>
-<h2 id="4-pipelines-py"><a href="#4-pipelines-py" class="headerlink" title="4. pipelines.py"></a>4. pipelines.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">from scrapy.conf import settings</span><br><span class="line">import pymongo</span><br><span class="line"></span><br><span class="line">class DoubanspiderPipeline(object):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        <span class="comment"># 获取setting主机名、端口号和数据库名</span></span><br><span class="line">        host = settings[<span class="string">'MONGODB_HOST'</span>]</span><br><span class="line">        port = settings[<span class="string">'MONGODB_PORT'</span>]</span><br><span class="line">        dbname = settings[<span class="string">'MONGODB_DBNAME'</span>]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># pymongo.MongoClient(host, port) 创建MongoDB链接</span></span><br><span class="line">        client = pymongo.MongoClient(host=host,port=port)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 指向指定的数据库</span></span><br><span class="line">        mdb = client[dbname]</span><br><span class="line">        <span class="comment"># 获取数据库里存放数据的表名</span></span><br><span class="line">        self.post = mdb[settings[<span class="string">'MONGODB_DOCNAME'</span>]]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    def process_item(self, item, spider):</span><br><span class="line">        data = dict(item)</span><br><span class="line">        <span class="comment"># 向指定的表里添加数据</span></span><br><span class="line">        self.post.insert(data)</span><br><span class="line">        <span class="built_in">return</span> item</span><br></pre></td></tr></table></figure>
-<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">启动MongoDB数据库需要两个命令：</span><br><span class="line"></span><br><span class="line">mongod：是mongoDB数据库进程本身</span><br><span class="line">mongo：是命令行shell客户端</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">sudo mongod <span class="comment"># 首先启动数据库服务，再执行Scrapy</span></span><br><span class="line">sudo mongo <span class="comment"># 启动数据库shell</span></span><br><span class="line"></span><br><span class="line">在mongo shell下使用命令:</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看当前数据库</span></span><br><span class="line">&gt; db</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出所有的数据库</span></span><br><span class="line">&gt; show dbs</span><br><span class="line"></span><br><span class="line"><span class="comment"># 连接DouBan数据库</span></span><br><span class="line">&gt; use DouBan</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出所有表</span></span><br><span class="line">&gt; show collections</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看表里的数据</span></span><br><span class="line">&gt; db.DouBanMoives.find()</span><br></pre></td></tr></table></figure>
+        <h2 id="发送请求时服务端报如下错误"><a href="#发送请求时服务端报如下错误" class="headerlink" title="发送请求时服务端报如下错误"></a>发送请求时服务端报如下错误</h2><p>InternalServerError: 500: Internal ServerError<br>class TasksAPI(Resource):<br>    def <strong>init</strong>(self):<br>        self.reqparse = reqparse.RequestParser()<br>        self.reqparse.add_argument(‘ip’, type=list, location=’json’, required=True)<br>        self.reqparse.add_argument(‘user’, type=str, location=’json’, required=True)<br>        self.reqparse.add_argument(‘password’, type=str, location=’json’, required=False)<br>        self.reqparse.add_argument(‘private_key’, type=str, location=’json’, required=False)<br>        self.reqparse.add_argument(‘taskname’, type=str, location=’json’, required=True)<br>        self.reqparse.add_argument(‘args’, type=dict, location=’json’, required=False)<br>有些参数设置为 required=True,但发送请求时并没有带此参数。</p>
 
       
 
@@ -505,7 +717,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/爬虫//" class="article-tag-list-link color3">爬虫</a>
+        			<a href="/categories/flask//" class="article-tag-list-link color1">flask</a>
         		</li>
       		
 		</ul>
@@ -514,7 +726,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/25/爬取豆瓣将数据保存到mongodb里/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/12/23/发送请求时服务端报如下错误/">展开全文 >></a>
         </p>
       
 
@@ -544,33 +756,27 @@
 
 
   
-    <article id="post-新浪网分类资讯爬虫" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+    <article id="post-不能关联Jinja2模版的问题解决" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/10/新浪网分类资讯爬虫/">新浪网分类资讯爬虫</a>
+      <a class="article-title" href="/2017/11/12/不能关联Jinja2模版的问题解决/">不能关联Jinja2模版的问题解决</a>
     </h1>
   
 
         
-        <a href="/2017/05/10/新浪网分类资讯爬虫/" class="archive-article-date">
-  	<time datetime="2017-05-10T05:22:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-10</time>
+        <a href="/2017/11/12/不能关联Jinja2模版的问题解决/" class="archive-article-date">
+  	<time datetime="2017-11-12T10:17:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>爬取新浪网导航页所有下所有大类、小类、小类里的子链接，以及子链接页面的新闻内容。</p>
-<h2 id="1-items-py"><a href="#1-items-py" class="headerlink" title="1. items.py"></a>1. items.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line">import sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(<span class="string">"utf-8"</span>)</span><br><span class="line"></span><br><span class="line">class SinaItem(scrapy.Item):</span><br><span class="line">    <span class="comment"># 大类的标题 和 url</span></span><br><span class="line">    parentTitle = scrapy.Field()</span><br><span class="line">    parentUrls = scrapy.Field()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 小类的标题 和 子url</span></span><br><span class="line">    subTitle = scrapy.Field()</span><br><span class="line">    subUrls = scrapy.Field()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 小类目录存储路径</span></span><br><span class="line">    subFilename = scrapy.Field()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 小类下的子链接</span></span><br><span class="line">    sonUrls = scrapy.Field()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 文章标题和内容</span></span><br><span class="line">    head = scrapy.Field()</span><br><span class="line">    content = scrapy.Field()</span><br></pre></td></tr></table></figure>
-<h3 id="2-spiders-sina-py"><a href="#2-spiders-sina-py" class="headerlink" title="2. spiders/sina.py"></a>2. spiders/sina.py</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line">from Sina.items import SinaItem</span><br><span class="line">import scrapy</span><br><span class="line">import os</span><br><span class="line"></span><br><span class="line">import sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(<span class="string">"utf-8"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class SinaSpider(scrapy.Spider):</span><br><span class="line">    name= <span class="string">"sina"</span></span><br><span class="line">    allowed_domains= [<span class="string">"sina.com.cn"</span>]</span><br><span class="line">    start_urls= [</span><br><span class="line">       <span class="string">"http://news.sina.com.cn/guide/"</span></span><br><span class="line">    ]</span><br><span class="line"></span><br><span class="line">    def parse(self, response):</span><br><span class="line">        items= []</span><br><span class="line">        <span class="comment"># 所有大类的url 和 标题</span></span><br><span class="line">        parentUrls = response.xpath(<span class="string">'//div[@id=\"tab01\"]/div/h3/a/@href'</span>).extract()</span><br><span class="line">        parentTitle = response.xpath(<span class="string">"//div[@id=\"tab01\"]/div/h3/a/text()"</span>).extract()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 所有小类的ur 和 标题</span></span><br><span class="line">        subUrls  = response.xpath(<span class="string">'//div[@id=\"tab01\"]/div/ul/li/a/@href'</span>).extract()</span><br><span class="line">        subTitle = response.xpath(<span class="string">'//div[@id=\"tab01\"]/div/ul/li/a/text()'</span>).extract()</span><br><span class="line"></span><br><span class="line">        <span class="comment">#爬取所有大类</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(0, len(parentTitle)):</span><br><span class="line">            <span class="comment"># 指定大类目录的路径和目录名</span></span><br><span class="line">            parentFilename = <span class="string">"./Data/"</span> + parentTitle[i]</span><br><span class="line"></span><br><span class="line">            <span class="comment">#如果目录不存在，则创建目录</span></span><br><span class="line">            <span class="keyword">if</span>(not os.path.exists(parentFilename)):</span><br><span class="line">                os.makedirs(parentFilename)</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 爬取所有小类</span></span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(0, len(subUrls)):</span><br><span class="line">                item = SinaItem()</span><br><span class="line"></span><br><span class="line">                <span class="comment"># 保存大类的title和urls</span></span><br><span class="line">                item[<span class="string">'parentTitle'</span>] = parentTitle[i]</span><br><span class="line">                item[<span class="string">'parentUrls'</span>] = parentUrls[i]</span><br><span class="line"></span><br><span class="line">                <span class="comment"># 检查小类的url是否以同类别大类url开头，如果是返回True (sports.sina.com.cn 和 sports.sina.com.cn/nba)</span></span><br><span class="line">                if_belong = subUrls[j].startswith(item[<span class="string">'parentUrls'</span>])</span><br><span class="line"></span><br><span class="line">                <span class="comment"># 如果属于本大类，将存储目录放在本大类目录下</span></span><br><span class="line">                <span class="keyword">if</span>(if_belong):</span><br><span class="line">                    subFilename =parentFilename + <span class="string">'/'</span>+ subTitle[j]</span><br><span class="line">                    <span class="comment"># 如果目录不存在，则创建目录</span></span><br><span class="line">                    <span class="keyword">if</span>(not os.path.exists(subFilename)):</span><br><span class="line">                        os.makedirs(subFilename)</span><br><span class="line"></span><br><span class="line">                    <span class="comment"># 存储 小类url、title和filename字段数据</span></span><br><span class="line">                    item[<span class="string">'subUrls'</span>] = subUrls[j]</span><br><span class="line">                    item[<span class="string">'subTitle'</span>] =subTitle[j]</span><br><span class="line">                    item[<span class="string">'subFilename'</span>] = subFilename</span><br><span class="line"></span><br><span class="line">                    items.append(item)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#发送每个小类url的Request请求，得到Response连同包含meta数据 一同交给回调函数 second_parse 方法处理</span></span><br><span class="line">        <span class="keyword">for</span> item <span class="keyword">in</span> items:</span><br><span class="line">            yield scrapy.Request( url = item[<span class="string">'subUrls'</span>], meta=&#123;<span class="string">'meta_1'</span>: item&#125;, callback=self.second_parse)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#对于返回的小类的url，再进行递归请求</span></span><br><span class="line">    def second_parse(self, response):</span><br><span class="line">        <span class="comment"># 提取每次Response的meta数据</span></span><br><span class="line">        meta_1= response.meta[<span class="string">'meta_1'</span>]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 取出小类里所有子链接</span></span><br><span class="line">        sonUrls = response.xpath(<span class="string">'//a/@href'</span>).extract()</span><br><span class="line"></span><br><span class="line">        items= []</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(0, len(sonUrls)):</span><br><span class="line">            <span class="comment"># 检查每个链接是否以大类url开头、以.shtml结尾，如果是返回True</span></span><br><span class="line">            if_belong = sonUrls[i].endswith(<span class="string">'.shtml'</span>) and sonUrls[i].startswith(meta_1[<span class="string">'parentUrls'</span>])</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 如果属于本大类，获取字段值放在同一个item下便于传输</span></span><br><span class="line">            <span class="keyword">if</span>(if_belong):</span><br><span class="line">                item = SinaItem()</span><br><span class="line">                item[<span class="string">'parentTitle'</span>] =meta_1[<span class="string">'parentTitle'</span>]</span><br><span class="line">                item[<span class="string">'parentUrls'</span>] =meta_1[<span class="string">'parentUrls'</span>]</span><br><span class="line">                item[<span class="string">'subUrls'</span>] = meta_1[<span class="string">'subUrls'</span>]</span><br><span class="line">                item[<span class="string">'subTitle'</span>] = meta_1[<span class="string">'subTitle'</span>]</span><br><span class="line">                item[<span class="string">'subFilename'</span>] = meta_1[<span class="string">'subFilename'</span>]</span><br><span class="line">                item[<span class="string">'sonUrls'</span>] = sonUrls[i]</span><br><span class="line">                items.append(item)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#发送每个小类下子链接url的Request请求，得到Response后连同包含meta数据 一同交给回调函数 detail_parse 方法处理</span></span><br><span class="line">        <span class="keyword">for</span> item <span class="keyword">in</span> items:</span><br><span class="line">                yield scrapy.Request(url=item[<span class="string">'sonUrls'</span>], meta=&#123;<span class="string">'meta_2'</span>:item&#125;, callback = self.detail_parse)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 数据解析方法，获取文章标题和内容</span></span><br><span class="line">    def detail_parse(self, response):</span><br><span class="line">        item = response.meta[<span class="string">'meta_2'</span>]</span><br><span class="line">        content = <span class="string">""</span></span><br><span class="line">        head = response.xpath(<span class="string">'//h1[@id=\"main_title\"]/text()'</span>)</span><br><span class="line">        content_list = response.xpath(<span class="string">'//div[@id=\"artibody\"]/p/text()'</span>).extract()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 将p标签里的文本内容合并到一起</span></span><br><span class="line">        <span class="keyword">for</span> content_one <span class="keyword">in</span> content_list:</span><br><span class="line">            content += content_one</span><br><span class="line"></span><br><span class="line">        item[<span class="string">'head'</span>]= head</span><br><span class="line">        item[<span class="string">'content'</span>]= content</span><br><span class="line"></span><br><span class="line">        yield item</span><br></pre></td></tr></table></figure>
-<h2 id="3-设置setting-py"><a href="#3-设置setting-py" class="headerlink" title="3. 设置setting.py"></a>3. 设置setting.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">BOT_NAME = <span class="string">'Sina'</span></span><br><span class="line"></span><br><span class="line">SPIDER_MODULES = [<span class="string">'Sina.spiders'</span>]</span><br><span class="line">NEWSPIDER_MODULE = <span class="string">'Sina.spiders'</span></span><br><span class="line"></span><br><span class="line">ITEM_PIPELINES = &#123;</span><br><span class="line">    <span class="string">'Sina.pipelines.SinaPipeline'</span>: 300,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">LOG_LEVEL = <span class="string">'DEBUG'</span></span><br></pre></td></tr></table></figure>
-<h2 id="4-pipelines-py"><a href="#4-pipelines-py" class="headerlink" title="4. pipelines.py"></a>4. pipelines.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">from scrapy import signals</span><br><span class="line">import sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(<span class="string">"utf-8"</span>)</span><br><span class="line"></span><br><span class="line">class SinaPipeline(object):</span><br><span class="line">    def process_item(self, item, spider):</span><br><span class="line">        sonUrls = item[<span class="string">'sonUrls'</span>]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 文件名为子链接url中间部分，并将 / 替换为 _，保存为 .txt格式</span></span><br><span class="line">        filename = sonUrls[7:-6].replace(<span class="string">'/'</span>,<span class="string">'_'</span>)</span><br><span class="line">        filename += <span class="string">".txt"</span></span><br><span class="line"></span><br><span class="line">        fp = open(item[<span class="string">'subFilename'</span>]+<span class="string">'/'</span>+filename, <span class="string">'w'</span>)</span><br><span class="line">        fp.write(item[<span class="string">'content'</span>])</span><br><span class="line">        fp.close()</span><br><span class="line"></span><br><span class="line">        <span class="built_in">return</span> item</span><br></pre></td></tr></table></figure>
-<h2 id="在项目根目录下新建main-py文件-用于调试"><a href="#在项目根目录下新建main-py文件-用于调试" class="headerlink" title="在项目根目录下新建main.py文件,用于调试"></a>在项目根目录下新建main.py文件,用于调试</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">from scrapy import cmdline</span><br><span class="line">cmdline.execute(<span class="string">'scrapy crawl sina'</span>.split())</span><br></pre></td></tr></table></figure>
-<h2 id="执行程序"><a href="#执行程序" class="headerlink" title="执行程序"></a>执行程序</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py main.py</span><br></pre></td></tr></table></figure>
+        <h2 id="Pycharm中创建的flask项目，不能关联Jinja2模版的问题解决"><a href="#Pycharm中创建的flask项目，不能关联Jinja2模版的问题解决" class="headerlink" title="Pycharm中创建的flask项目，不能关联Jinja2模版的问题解决"></a>Pycharm中创建的flask项目，不能关联Jinja2模版的问题解决</h2><p>解决方案:在项目的根目录的.idea目录中，有个xxx.iml文件（xxx是项目名称），<br>打开这个iml文件，在现有的component标签的同级，添加如下代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;component name=<span class="string">"TemplatesService"</span>&gt;</span><br><span class="line">    &lt;option name=<span class="string">"TEMPLATE_CONFIGURATION"</span> value=<span class="string">"Jinja2"</span> /&gt;</span><br><span class="line">        &lt;option name=<span class="string">"TEMPLATE_FOLDERS"</span>&gt;</span><br><span class="line">        &lt;list&gt;</span><br><span class="line">            &lt;option value=<span class="string">"<span class="variable">$MODULE_DIR</span>$/templates"</span> /&gt;</span><br><span class="line">        &lt;/list&gt;</span><br><span class="line">    &lt;/option&gt;</span><br><span class="line">&lt;/component&gt;</span><br></pre></td></tr></table></figure></p>
 
       
 
@@ -585,7 +791,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/爬虫//" class="article-tag-list-link color3">爬虫</a>
+        			<a href="/categories/flask//" class="article-tag-list-link color1">flask</a>
         		</li>
       		
 		</ul>
@@ -594,7 +800,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/10/新浪网分类资讯爬虫/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/11/12/不能关联Jinja2模版的问题解决/">展开全文 >></a>
         </p>
       
 
@@ -624,33 +830,47 @@
 
 
   
-    <article id="post-Cosplay图片下载器爬虫" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+    <article id="post-Flask之Restful" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/05/Cosplay图片下载器爬虫/">Cosplay图片下载器爬虫</a>
+      <a class="article-title" href="/2017/09/10/Flask之Restful/">Flask之Restful接口</a>
     </h1>
   
 
         
-        <a href="/2017/05/05/Cosplay图片下载器爬虫/" class="archive-article-date">
-  	<time datetime="2017-05-05T06:22:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-05</time>
+        <a href="/2017/09/10/Flask之Restful/" class="archive-article-date">
+  	<time datetime="2017-09-10T01:17:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>爬取半次元网的，把图片下载到本地。</p>
-<h2 id="1-items-py"><a href="#1-items-py" class="headerlink" title="1. items.py"></a>1. items.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class CoserItem(scrapy.Item):</span><br><span class="line">    url = scrapy.Field() </span><br><span class="line">    name = scrapy.Field()</span><br><span class="line">    info = scrapy.Field()</span><br><span class="line">    image_urls = scrapy.Field()</span><br><span class="line">    images = scrapy.Field()</span><br></pre></td></tr></table></figure>
-<h3 id="2-spiders-coser-py"><a href="#2-spiders-coser-py" class="headerlink" title="2. spiders/coser.py"></a>2. spiders/coser.py</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line">from scrapy.selector import Selector</span><br><span class="line">import scrapy</span><br><span class="line">from scrapy.contrib.loader import ItemLoader</span><br><span class="line">from Cosplay.items import CoserItem</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class CoserSpider(scrapy.Spider):</span><br><span class="line">    name = <span class="string">"coser"</span></span><br><span class="line">    allowed_domains = [<span class="string">"bcy.net"</span>]</span><br><span class="line">    start_urls = (</span><br><span class="line">        <span class="string">'http://bcy.net/cn125101'</span>,</span><br><span class="line">        <span class="string">'http://bcy.net/cn126487'</span>,</span><br><span class="line">        <span class="string">'http://bcy.net/cn126173'</span></span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    def parse(self, response):</span><br><span class="line">        sel = Selector(response)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> link <span class="keyword">in</span> sel.xpath(<span class="string">"//ul[@class='js-articles l-works']/li[@class='l-work--big']/article[@class='work work--second-created']/h2[@class='work__title']/a/@href"</span>).extract():</span><br><span class="line">            link = <span class="string">'http://bcy.net%s'</span> % link</span><br><span class="line">            request = scrapy.Request(link, callback=self.parse_item)</span><br><span class="line">            yield request</span><br><span class="line"></span><br><span class="line">    def parse_item(self, response):</span><br><span class="line">        item = ItemLoader(item=CoserItem(), response=response)</span><br><span class="line">        item.add_xpath(<span class="string">'name'</span>, <span class="string">"//h1[@class='js-post-title']/text()"</span>)</span><br><span class="line">        item.add_xpath(<span class="string">'info'</span>, <span class="string">"//div[@class='post__info']/div[@class='post__type post__info-group']/span/text()"</span>)</span><br><span class="line">        urls = item.get_xpath(<span class="string">'//img[@class="detail_std detail_clickable"]/@src'</span>)</span><br><span class="line">        urls = [url.replace(<span class="string">'/w650'</span>, <span class="string">''</span>) <span class="keyword">for</span> url <span class="keyword">in</span> urls]</span><br><span class="line">        item.add_value(<span class="string">'image_urls'</span>, urls)</span><br><span class="line">        item.add_value(<span class="string">'url'</span>, response.url)</span><br><span class="line"></span><br><span class="line">        <span class="built_in">return</span> item.load_item()</span><br></pre></td></tr></table></figure>
-<h2 id="3-设置setting-py"><a href="#3-设置setting-py" class="headerlink" title="3. 设置setting.py"></a>3. 设置setting.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ITEM_PIPELINES = &#123;<span class="string">'Cosplay.pipelines.ImageDownloadPipeline'</span>: 1&#125;</span><br><span class="line"></span><br><span class="line">IMAGES_STORE = <span class="string">'../Images'</span></span><br><span class="line"></span><br><span class="line">DOWNLOAD_DELAY = 0.25    <span class="comment"># 250 ms of delay</span></span><br></pre></td></tr></table></figure>
-<h2 id="4-pipelines-py"><a href="#4-pipelines-py" class="headerlink" title="4. pipelines.py"></a>4. pipelines.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">import requests</span><br><span class="line">from Cosplay import settings</span><br><span class="line">import os</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class ImageDownloadPipeline(object):</span><br><span class="line">    def process_item(self, item, spider):</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'image_urls'</span> <span class="keyword">in</span> item:</span><br><span class="line">            images = []</span><br><span class="line">            dir_path = <span class="string">'%s/%s'</span> % (settings.IMAGES_STORE, spider.name)</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> not os.path.exists(dir_path):</span><br><span class="line">                os.makedirs(dir_path)</span><br><span class="line">            <span class="keyword">for</span> image_url <span class="keyword">in</span> item[<span class="string">'image_urls'</span>]:</span><br><span class="line">                us = image_url.split(<span class="string">'/'</span>)[3:]</span><br><span class="line">                image_file_name = <span class="string">'_'</span>.join(us)</span><br><span class="line">                file_path = <span class="string">'%s/%s'</span> % (dir_path, image_file_name)</span><br><span class="line">                images.append(file_path)</span><br><span class="line">                <span class="keyword">if</span> os.path.exists(file_path):</span><br><span class="line">                    <span class="built_in">continue</span></span><br><span class="line"></span><br><span class="line">                with open(file_path, <span class="string">'wb'</span>) as handle:</span><br><span class="line">                    response = requests.get(image_url, stream=True)</span><br><span class="line">                    <span class="keyword">for</span> block <span class="keyword">in</span> response.iter_content(1024):</span><br><span class="line">                        <span class="keyword">if</span> not block:</span><br><span class="line">                            <span class="built_in">break</span></span><br><span class="line"></span><br><span class="line">                        handle.write(block)</span><br><span class="line"></span><br><span class="line">            item[<span class="string">'images'</span>] = images</span><br><span class="line">        <span class="built_in">return</span> item</span><br></pre></td></tr></table></figure>
-<h2 id="在项目根目录下新建main-py文件-用于调试"><a href="#在项目根目录下新建main-py文件-用于调试" class="headerlink" title="在项目根目录下新建main.py文件,用于调试"></a>在项目根目录下新建main.py文件,用于调试</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">from scrapy import cmdline</span><br><span class="line">cmdline.execute(<span class="string">'scrapy crawl coser'</span>.split())</span><br></pre></td></tr></table></figure>
-<h2 id="执行程序"><a href="#执行程序" class="headerlink" title="执行程序"></a>执行程序</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py main.py</span><br></pre></td></tr></table></figure>
+        <h2 id="Restful"><a href="#Restful" class="headerlink" title="Restful"></a>Restful</h2><p>2000年，Roy Thomas Fielding博士在他的博士论文《Architectural Styles and the Design of Network-based Software Architectures》中提出了几种软件应用的架构风格，REST作为其中的一种架构风格在这篇论文中进行了概括性的介绍。</p>
+<p>REST:Representational State Transfer的缩写，翻译：“具象状态传输”。一般解释为“表现层状态转换”。</p>
+<p>REST是设计风格而不是标准。是指客户端和服务器的交互形式。我们需要关注的重点是如何设计REST风格的网络接口。</p>
+<p>REST的特点：<br>具象的。一般指表现层，要表现的对象就是资源。比如，客户端访问服务器，获取的数据就是资源。比如文字、图片、音视频等。</p>
+<p>表现：资源的表现形式。txt格式、html格式、json格式、jpg格式等。浏览器通过URL确定资源的位置，但是需要在HTTP请求头中，用Accept和Content-Type字段指定，这两个字段是对资源表现的描述。</p>
+<p>状态转换：客户端和服务器交互的过程。在这个过程中，一定会有数据和状态的转化，这种转化叫做状态转换。其中，GET表示获取资源，POST表示新建资源，PUT表示更新资源，DELETE表示删除资源。HTTP协议中最常用的就是这四种操作方式。</p>
+<p>RESTful架构：<br>每个URL代表一种资源；<br>客户端和服务器之间，传递这种资源的某种表现层；<br>客户端通过四个http动词，对服务器资源进行操作，实现表现层状态转换。</p>
+<h2 id="如何设计符合RESTful风格的API："><a href="#如何设计符合RESTful风格的API：" class="headerlink" title="如何设计符合RESTful风格的API："></a>如何设计符合RESTful风格的API：</h2><p>一、域名：<br>将api部署在专用域名下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://api.example.com</span><br></pre></td></tr></table></figure></p>
+<p>或者将api放在主域名下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://www.example.com/api/</span><br></pre></td></tr></table></figure></p>
+<h2 id="版本："><a href="#版本：" class="headerlink" title="版本："></a>版本：</h2><p>将API的版本号放在url中。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://www.example.com/app/1.0/info</span><br><span class="line">http://www.example.com/app/1.2/info</span><br></pre></td></tr></table></figure></p>
+<h2 id="路径："><a href="#路径：" class="headerlink" title="路径："></a>路径：</h2><p>路径表示API的具体网址。每个网址代表一种资源。 资源作为网址，网址中不能有动词只能有名词，一般名词要与数据库的表名对应。而且名词要使用复数。</p>
+<p>错误示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://www.example.com/getGoods</span><br><span class="line">http://www.example.com/listOrders</span><br></pre></td></tr></table></figure></p>
+<p><a href="http://www.example.com/getGoods" target="_blank" rel="noopener">http://www.example.com/getGoods</a><br><a href="http://www.example.com/listOrders" target="_blank" rel="noopener">http://www.example.com/listOrders</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#获取单个商品</span></span><br><span class="line">http://www.example.com/app/goods/1</span><br><span class="line"><span class="comment">#获取所有商品</span></span><br><span class="line">http://www.example.com/app/goods</span><br></pre></td></tr></table></figure></p>
+<h2 id="使用标准的HTTP方法："><a href="#使用标准的HTTP方法：" class="headerlink" title="使用标准的HTTP方法："></a>使用标准的HTTP方法：</h2><p>对于资源的具体操作类型，由HTTP动词表示。 常用的HTTP动词有四个。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">GET     SELECT ：从服务器获取资源。</span><br><span class="line">POST    CREATE ：在服务器新建资源。</span><br><span class="line">PUT     UPDATE ：在服务器更新资源。</span><br><span class="line">DELETE  DELETE ：从服务器删除资源。</span><br></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#获取指定商品的信息</span></span><br><span class="line">GET http://www.example.com/goods/ID</span><br><span class="line"><span class="comment">#新建商品的信息</span></span><br><span class="line">POST http://www.example.com/goods</span><br><span class="line"><span class="comment">#更新指定商品的信息</span></span><br><span class="line">PUT http://www.example.com/goods/ID</span><br><span class="line"><span class="comment">#删除指定商品的信息</span></span><br><span class="line">DELETE http://www.example.com/goods/ID</span><br></pre></td></tr></table></figure></p>
+<h2 id="过滤信息："><a href="#过滤信息：" class="headerlink" title="过滤信息："></a>过滤信息：</h2><p>如果资源数据较多，服务器不能将所有数据一次全部返回给客户端。API应该提供参数，过滤返回结果。 实例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#指定返回数据的数量</span></span><br><span class="line">http://www.example.com/goods?<span class="built_in">limit</span>=10</span><br><span class="line"><span class="comment">#指定返回数据的开始位置</span></span><br><span class="line">http://www.example.com/goods?offset=10</span><br><span class="line"><span class="comment">#指定第几页，以及每页数据的数量</span></span><br><span class="line">http://www.example.com/goods?page=2&amp;per_page=20</span><br></pre></td></tr></table></figure></p>
+<h2 id="状态码："><a href="#状态码：" class="headerlink" title="状态码："></a>状态码：</h2><p>服务器向用户返回的状态码和提示信息，常用的有：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">200 OK  ：服务器成功返回用户请求的数据</span><br><span class="line">201 CREATED ：用户新建或修改数据成功。</span><br><span class="line">202 Accepted：表示请求已进入后台排队。</span><br><span class="line">400 INVALID REQUEST ：用户发出的请求有错误。</span><br><span class="line">401 Unauthorized ：用户没有权限。</span><br><span class="line">403 Forbidden ：访问被禁止。</span><br><span class="line">404 NOT FOUND ：请求针对的是不存在的记录。</span><br><span class="line">406 Not Acceptable ：用户请求的的格式不正确。</span><br><span class="line">500 INTERNAL SERVER ERROR ：服务器发生错误。</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="错误信息："><a href="#错误信息：" class="headerlink" title="错误信息："></a>错误信息：</h2><p>一般来说，服务器返回的错误信息，以键值对的形式返回。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    error:<span class="string">'Invalid API KEY'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="响应结果："><a href="#响应结果：" class="headerlink" title="响应结果："></a>响应结果：</h2><p>针对不同结果，服务器向客户端返回的结果应符合以下规范。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#返回商品列表</span></span><br><span class="line">GET    http://www.example.com/goods</span><br><span class="line"><span class="comment">#返回单个商品</span></span><br><span class="line">GET    http://www.example.com/goods/cup</span><br><span class="line"><span class="comment">#返回新生成的商品</span></span><br><span class="line">POST   http://www.example.com/goods</span><br><span class="line"><span class="comment">#返回一个空文档</span></span><br><span class="line">DELETE http://www.example.com/goods</span><br></pre></td></tr></table></figure></p>
+<h2 id="使用链接关联相关的资源："><a href="#使用链接关联相关的资源：" class="headerlink" title="使用链接关联相关的资源："></a>使用链接关联相关的资源：</h2><p>针对不同结果，服务器向客户端返回的结果应符合以下规范。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在返回响应结果时提供链接其他API的方法，使客户端很方便的获取相关联的信息。</span><br></pre></td></tr></table></figure></p>
+<h2 id="其他："><a href="#其他：" class="headerlink" title="其他："></a>其他：</h2><p>服务器返回的数据格式，应该尽量使用JSON，避免使用XML。</p>
 
       
 
@@ -665,7 +885,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/爬虫//" class="article-tag-list-link color3">爬虫</a>
+        			<a href="/categories/flask//" class="article-tag-list-link color1">flask</a>
         		</li>
       		
 		</ul>
@@ -674,244 +894,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/05/Cosplay图片下载器爬虫/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-阳光热线问政平台" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/29/阳光热线问政平台/">阳光热线问政平台</a>
-    </h1>
-  
-
-        
-        <a href="/2017/04/29/阳光热线问政平台/" class="archive-article-date">
-  	<time datetime="2017-04-29T05:22:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="http://wz.sun0769.com/index.php/question/questionType?type=4" target="_blank" rel="noopener">http://wz.sun0769.com/index.php/question/questionType?type=4</a><br>爬取投诉帖子的编号、帖子的url、帖子的标题，和帖子里的内容。</p>
-<h2 id="1-items-py"><a href="#1-items-py" class="headerlink" title="1. items.py"></a>1. items.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line"></span><br><span class="line">class DongguanItem(scrapy.Item):</span><br><span class="line">    <span class="comment"># 每个帖子的标题</span></span><br><span class="line">    title = scrapy.Field()</span><br><span class="line">    <span class="comment"># 每个帖子的编号</span></span><br><span class="line">    number = scrapy.Field()</span><br><span class="line">    <span class="comment"># 每个帖子的文字内容</span></span><br><span class="line">    content = scrapy.Field()</span><br><span class="line">    <span class="comment"># 每个帖子的url</span></span><br><span class="line">    url = scrapy.Field()</span><br></pre></td></tr></table></figure>
-<h3 id="2-spiders-sunwz-py"><a href="#2-spiders-sunwz-py" class="headerlink" title="2. spiders/sunwz.py"></a>2. spiders/sunwz.py</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line">import scrapy</span><br><span class="line">from scrapy.linkextractors import LinkExtractor</span><br><span class="line">from scrapy.spiders import CrawlSpider, Rule</span><br><span class="line">from dongguan.items import DongguanItem</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class SunSpider(CrawlSpider):</span><br><span class="line">    name = <span class="string">'sun'</span></span><br><span class="line">    allowed_domains = [<span class="string">'wz.sun0769.com'</span>]</span><br><span class="line">    start_urls = [<span class="string">'http://wz.sun0769.com/index.php/question/questionType?type=4&amp;page='</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 每一页的匹配规则</span></span><br><span class="line">    pagelink = LinkExtractor(allow=(<span class="string">'type=4'</span>))</span><br><span class="line">    <span class="comment"># 每个帖子的匹配规则</span></span><br><span class="line">    contentlink = LinkExtractor(allow=r<span class="string">'/html/question/\d+/\d+.shtml'</span>)</span><br><span class="line"></span><br><span class="line">    rules = [</span><br><span class="line">        <span class="comment"># 本案例为特殊情况，需要调用deal_links方法处理每个页面里的链接</span></span><br><span class="line">        Rule(pagelink, process_links = <span class="string">"deal_links"</span>, follow = True),</span><br><span class="line">        Rule(contentlink, callback = <span class="string">'parse_item'</span>)</span><br><span class="line">    ]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 需要重新处理每个页面里的链接，将链接里的‘Type&amp;type=4?page=xxx’替换为‘Type?type=4&amp;page=xxx’（或者是Type&amp;page=xxx?type=4’替换为‘Type?page=xxx&amp;type=4’），否则无法发送这个链接</span></span><br><span class="line">    def deal_links(self, links):</span><br><span class="line">        <span class="keyword">for</span> link <span class="keyword">in</span> links:</span><br><span class="line">            link.url = link.url.replace(<span class="string">"?"</span>,<span class="string">"&amp;"</span>).replace(<span class="string">"Type&amp;"</span>, <span class="string">"Type?"</span>)</span><br><span class="line">            <span class="built_in">print</span> link.url</span><br><span class="line">        <span class="built_in">return</span> links</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    def parse_item(self, response):</span><br><span class="line">        <span class="built_in">print</span> response.url</span><br><span class="line">        item = DongguanItem()</span><br><span class="line">        <span class="comment"># 标题</span></span><br><span class="line">        item[<span class="string">'title'</span>] = response.xpath(<span class="string">'//div[contains(@class, "pagecenter p3")]//strong/text()'</span>).extract()[0]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 编号</span></span><br><span class="line">        item[<span class="string">'number'</span>] = item[<span class="string">'title'</span>].split(<span class="string">' '</span>)[-1].split(<span class="string">":"</span>)[-1]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 文字内容，默认先取出有图片情况下的文字内容列表</span></span><br><span class="line">        content = response.xpath(<span class="string">'//div[@class="contentext"]/text()'</span>).extract()</span><br><span class="line">        <span class="comment"># 如果没有内容，则取出没有图片情况下的文字内容列表</span></span><br><span class="line">        <span class="keyword">if</span> len(content) == 0:</span><br><span class="line">            content = response.xpath(<span class="string">'//div[@class="c1 text14_2"]/text()'</span>).extract()</span><br><span class="line">            <span class="comment"># content为列表，通过join方法拼接为字符串，并去除首尾空格</span></span><br><span class="line">            item[<span class="string">'content'</span>] = <span class="string">""</span>.join(content).strip()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            item[<span class="string">'content'</span>] = <span class="string">""</span>.join(content).strip()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 链接</span></span><br><span class="line">        item[<span class="string">'url'</span>] = response.url</span><br><span class="line"></span><br><span class="line">        yield item</span><br></pre></td></tr></table></figure>
-<h2 id="3-设置setting-py"><a href="#3-设置setting-py" class="headerlink" title="3. 设置setting.py"></a>3. 设置setting.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ITEM_PIPELINES = &#123;</span><br><span class="line">    <span class="string">'dongguan.pipelines.DongguanPipeline'</span>: 300,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 日志文件名和处理等级</span></span><br><span class="line">LOG_FILE = <span class="string">"dg.log"</span></span><br><span class="line">LOG_LEVEL = <span class="string">"DEBUG"</span></span><br></pre></td></tr></table></figure>
-<h2 id="4-pipelines-py"><a href="#4-pipelines-py" class="headerlink" title="4. pipelines.py"></a>4. pipelines.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 文件处理类库，可以指定编码格式</span></span><br><span class="line">import codecs</span><br><span class="line">import json</span><br><span class="line"></span><br><span class="line">class JsonWriterPipeline(object):</span><br><span class="line"></span><br><span class="line">    def __init__(self):</span><br><span class="line">        <span class="comment"># 创建一个只写文件，指定文本编码格式为utf-8</span></span><br><span class="line">        self.filename = codecs.open(<span class="string">'sunwz.json'</span>, <span class="string">'w'</span>, encoding=<span class="string">'utf-8'</span>)</span><br><span class="line"></span><br><span class="line">    def process_item(self, item, spider):</span><br><span class="line">        content = json.dumps(dict(item), ensure_ascii=False) + <span class="string">"\n"</span></span><br><span class="line">        self.filename.write(content)</span><br><span class="line">        <span class="built_in">return</span> item</span><br><span class="line"></span><br><span class="line">    def spider_closed(self, spider):</span><br><span class="line">        self.file.close()</span><br></pre></td></tr></table></figure>
-<h2 id="在项目根目录下新建main-py文件-用于调试"><a href="#在项目根目录下新建main-py文件-用于调试" class="headerlink" title="在项目根目录下新建main.py文件,用于调试"></a>在项目根目录下新建main.py文件,用于调试</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">from scrapy import cmdline</span><br><span class="line">cmdline.execute(<span class="string">'scrapy crawl sunwz'</span>.split())</span><br></pre></td></tr></table></figure>
-<h2 id="执行程序"><a href="#执行程序" class="headerlink" title="执行程序"></a>执行程序</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py2 main.py</span><br></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/python//" class="article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/04/29/阳光热线问政平台/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-scrapy实现斗鱼直播爬虫" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/20/scrapy实现斗鱼直播爬虫/">斗鱼直播爬虫</a>
-    </h1>
-  
-
-        
-        <a href="/2017/04/20/scrapy实现斗鱼直播爬虫/" class="archive-article-date">
-  	<time datetime="2017-04-20T03:46:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-items-py"><a href="#1-items-py" class="headerlink" title="1. items.py"></a>1. items.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">class DouyuspiderItem(scrapy.Item):</span><br><span class="line">    name = scrapy.Field()<span class="comment"># 存储照片的名字</span></span><br><span class="line">    imagesUrls = scrapy.Field()<span class="comment"># 照片的url路径</span></span><br><span class="line">    imagesPath = scrapy.Field()<span class="comment"># 照片保存在本地的路径</span></span><br></pre></td></tr></table></figure>
-<h3 id="2-spiders-douyu-py"><a href="#2-spiders-douyu-py" class="headerlink" title="2. spiders/douyu.py"></a>2. spiders/douyu.py</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line">import json</span><br><span class="line">from douyuSpider.items import DouyuspiderItem</span><br><span class="line"></span><br><span class="line">class DouyuSpider(scrapy.Spider):</span><br><span class="line">    name = <span class="string">"douyu"</span></span><br><span class="line">    allowd_domains = [<span class="string">"http://capi.douyucdn.cn"</span>]</span><br><span class="line"></span><br><span class="line">    offset = 0</span><br><span class="line">    url = <span class="string">"http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=20&amp;offset="</span></span><br><span class="line">    start_urls = [url + str(offset)]</span><br><span class="line"></span><br><span class="line">  def parse(self, response):</span><br><span class="line">      <span class="comment"># 返回从json里获取 data段数据集合</span></span><br><span class="line">      data = json.loads(response.text)[<span class="string">"data"</span>]</span><br><span class="line"></span><br><span class="line">      <span class="keyword">for</span> each <span class="keyword">in</span> data:</span><br><span class="line">          item = DouyuspiderItem()</span><br><span class="line">          item[<span class="string">"name"</span>] = each[<span class="string">"nickname"</span>]</span><br><span class="line">          item[<span class="string">"imagesUrls"</span>] = each[<span class="string">"vertical_src"</span>]</span><br><span class="line"></span><br><span class="line">          yield item</span><br><span class="line"></span><br><span class="line">      self.offset += 20</span><br><span class="line">      yield scrapy.Request(self.url + str(self.offset), callback = self.parse)</span><br></pre></td></tr></table></figure>
-<h2 id="3-设置setting-py"><a href="#3-设置setting-py" class="headerlink" title="3. 设置setting.py"></a>3. 设置setting.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ITEM_PIPELINES = &#123;<span class="string">'douyuSpider.pipelines.ImagesPipeline'</span>: 1&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Images 的存放位置，之后会在pipelines.py里调用</span></span><br><span class="line">IMAGES_STORE = <span class="string">"/Users/Power/lesson_python/douyuSpider/Images"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># user-agent</span></span><br><span class="line">USER_AGENT = <span class="string">'DYZB/2.290 (iPhone; iOS 9.3.4; Scale/2.00)'</span></span><br></pre></td></tr></table></figure>
-<h2 id="4-pipelines-py"><a href="#4-pipelines-py" class="headerlink" title="4. pipelines.py"></a>4. pipelines.py</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line">import os</span><br><span class="line">from scrapy.pipelines.images import ImagesPipeline</span><br><span class="line">from scrapy.utils.project import get_project_settings</span><br><span class="line"></span><br><span class="line">class ImagesPipeline(ImagesPipeline):</span><br><span class="line">    IMAGES_STORE = get_project_settings().get(<span class="string">"IMAGES_STORE"</span>)</span><br><span class="line"></span><br><span class="line">    def get_media_requests(self, item, info):</span><br><span class="line">        image_url = item[<span class="string">"imagesUrls"</span>]</span><br><span class="line">        yield scrapy.Request(image_url)</span><br><span class="line"></span><br><span class="line">    def item_completed(self, results, item, info):</span><br><span class="line">        <span class="comment"># 固定写法，获取图片路径，同时判断这个路径是否正确，如果正确，就放到 image_path里，ImagesPipeline源码剖析可见</span></span><br><span class="line">        image_path = [x[<span class="string">"path"</span>] <span class="keyword">for</span> ok, x <span class="keyword">in</span> results <span class="keyword">if</span> ok]</span><br><span class="line"></span><br><span class="line">        os.rename(self.IMAGES_STORE + <span class="string">"/"</span> + image_path[0], self.IMAGES_STORE + <span class="string">"/"</span> + item[<span class="string">"name"</span>] + <span class="string">".jpg"</span>)</span><br><span class="line">        item[<span class="string">"imagesPath"</span>] = self.IMAGES_STORE + <span class="string">"/"</span> + item[<span class="string">"name"</span>]</span><br><span class="line"></span><br><span class="line">        <span class="built_in">return</span> item</span><br><span class="line"></span><br><span class="line"><span class="comment">#get_media_requests的作用就是为每一个图片链接生成一个Request对象，这个方法的输出将作为item_completed的输入中的results，results是一个元组，每个元组包括(success, imageinfoorfailure)。如果success=true，imageinfoor_failure是一个字典，包括url/path/checksum三个key。</span></span><br><span class="line">在项目根目录下新建main.py文件,用于调试</span><br><span class="line">from scrapy import cmdline</span><br><span class="line">cmdline.execute(<span class="string">'scrapy crawl douyu'</span>.split())</span><br><span class="line">执行程序</span><br><span class="line">py2 main.py</span><br></pre></td></tr></table></figure>
-<h2 id="在项目根目录下新建main-py文件-用于调试"><a href="#在项目根目录下新建main-py文件-用于调试" class="headerlink" title="在项目根目录下新建main.py文件,用于调试"></a>在项目根目录下新建main.py文件,用于调试</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">from scrapy import cmdline</span><br><span class="line">cmdline.execute(<span class="string">'scrapy crawl douyu'</span>.split())</span><br></pre></td></tr></table></figure>
-<h2 id="执行程序"><a href="#执行程序" class="headerlink" title="执行程序"></a>执行程序</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py2 main.py</span><br></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/python//" class="article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/04/20/scrapy实现斗鱼直播爬虫/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-python糗事百科" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/01/python糗事百科/">python爬取糗事百科</a>
-    </h1>
-  
-
-        
-        <a href="/2017/04/01/python糗事百科/" class="archive-article-date">
-  	<time datetime="2017-04-01T13:46:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>要求：使用requests获取页面信息，用XPath / re 做数据提取，获取每个帖子里的用户头像链接、用户姓名、段子内容、点赞次数和评论次数保存到 json 文件内</p>
-<h2 id="第一步：安装requests，xml，retrying"><a href="#第一步：安装requests，xml，retrying" class="headerlink" title="第一步：安装requests，xml，retrying"></a>第一步：安装requests，xml，retrying</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pip intall requests</span><br><span class="line">pip intall lxml</span><br><span class="line">pip intall retrying</span><br></pre></td></tr></table></figure>
-<h3 id="第二步：爬取内容"><a href="#第二步：爬取内容" class="headerlink" title="第二步：爬取内容"></a>第二步：爬取内容</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding=utf-8</span></span><br><span class="line">import requests</span><br><span class="line">from retrying import retry</span><br><span class="line">from lxml import etree</span><br><span class="line"></span><br><span class="line">class Qiubai_spider():</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.url = <span class="string">"http://www.qiushibaike.com/8hr/page/&#123;&#125;/"</span></span><br><span class="line">        self.headers = &#123;</span><br><span class="line">            <span class="string">"User-Agent"</span>:<span class="string">"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1 Trident/5.0;"</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    @retry(stop_max_attempt_number=5) <span class="comment">#调用retry，当assert出错时候，重复请求5次</span></span><br><span class="line">    def parse_url(self,url):</span><br><span class="line">        response = requests.get(url,timeout=10,headers=self.headers) <span class="comment">#请求url</span></span><br><span class="line">        assert response.status_code==200  <span class="comment">#当响应码不是200时候，做断言报错处理</span></span><br><span class="line">        <span class="built_in">print</span>(url)</span><br><span class="line">        <span class="built_in">return</span> etree.HTML(response.text) <span class="comment">#返回etree之后的html</span></span><br><span class="line"></span><br><span class="line">    def parse_content(self,html):</span><br><span class="line">        item_temp = html.xpath(<span class="string">"//div[@class='article block untagged mb15']"</span>)</span><br><span class="line">        <span class="built_in">print</span>(len(item_temp))</span><br><span class="line">        <span class="keyword">for</span> item <span class="keyword">in</span> item_temp:</span><br><span class="line">            <span class="comment">#获取用户头像地址</span></span><br><span class="line">            avatar = item.xpath(<span class="string">"./div[1]/a[1]/img/@src"</span>)[0] <span class="keyword">if</span> len(item.xpath(<span class="string">"./div[1]/a[1]/img/@src"</span>))&gt;0 <span class="keyword">else</span> None</span><br><span class="line">            <span class="comment">#为头像地址添加前缀</span></span><br><span class="line">            <span class="keyword">if</span> avatar is not None and not avatar.startswith(<span class="string">"http:"</span>):</span><br><span class="line">                avatar = <span class="string">"http:"</span>+avatar</span><br><span class="line">            <span class="built_in">print</span>(avatar)</span><br><span class="line">            name = item.xpath(<span class="string">"./div[1]/a[2]/h2/text()"</span>)[0] <span class="comment">#获取用户名</span></span><br><span class="line">            <span class="built_in">print</span>(name)</span><br><span class="line">            content = item.xpath(<span class="string">"./a[@class='contentHerf']/div/span/text()"</span>)[0] <span class="comment">#获取内容</span></span><br><span class="line">            <span class="built_in">print</span>(content)</span><br><span class="line">            star_number = item.xpath(<span class="string">"./div[@class='stats']/span[1]/i/text()"</span>)[0] <span class="comment">#获取点赞数</span></span><br><span class="line">            <span class="built_in">print</span>(star_number)</span><br><span class="line">            comment_number = item.xpath(<span class="string">"./div[@class='stats']/span[2]/a/i/text()"</span>)[0] <span class="comment">#获取评论数</span></span><br><span class="line">            <span class="built_in">print</span>(comment_number)</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">"*"</span>*100)</span><br><span class="line"></span><br><span class="line">    def run(self):</span><br><span class="line">        <span class="string">''</span><span class="string">'函数的主要逻辑实现</span></span><br><span class="line"><span class="string">        '</span><span class="string">''</span></span><br><span class="line">        url = self.url.format(1) <span class="comment">#获取到url</span></span><br><span class="line">        html = self.parse_url(url) <span class="comment">#请求url</span></span><br><span class="line">        self.parse_content(html) <span class="comment">#解析页面内容并把内容存入内容队列</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    qiubai = Qiubai_spider()</span><br><span class="line">    qiubai.run()</span><br></pre></td></tr></table></figure>
-<h3 id="爬取效果"><a href="#爬取效果" class="headerlink" title="爬取效果"></a>爬取效果</h3><p><img src="/2017/04/01/python糗事百科/qiushi_duanzi.png" alt="爬取效果"></p>
-<p>爬取地址: <a href="https://www.qiushibaike.com/" target="_blank" rel="noopener">糗事百科</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/python//" class="article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/04/01/python糗事百科/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/09/10/Flask之Restful/">展开全文 >></a>
         </p>
       
 
@@ -943,7 +926,7 @@
   
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 
